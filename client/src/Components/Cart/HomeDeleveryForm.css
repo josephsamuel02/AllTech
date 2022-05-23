@@ -1,0 +1,302 @@
+
+
+
+
+
+
+/* Mobile view */
+@media (max-width: 543px) {
+
+#homedeleveryform {
+margin: auto;
+padding: auto;
+
+
+}
+#deleveryinfo{
+margin: auto;
+padding: 15px;
+
+}  
+
+#deleveryinfo h2{
+margin: auto;
+padding: 10px;
+font-size: 22px;
+font-family: 'Segoe UI';
+
+color: rgb(254, 18, 18);
+text-align: center;
+}
+
+#deleveryinfo li{
+margin: auto;
+padding: 4px;
+font-size: 18px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+list-style-type: none; ;
+color: rgba(3, 3, 3, 0.933);
+}
+
+#homedeleveryform h4{
+margin: auto;
+padding: 10px;
+font-size: 19px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+text-align: center;
+}
+
+#homedeleveryform p{
+margin: auto;
+padding: 10px;
+font-size: 14px;
+font-family: 'Segoe UI'; 
+color: rgb(44, 42, 55);
+text-align: center;
+}
+
+#homedeleveryform .select{
+margin: 0px;
+padding:10px;
+font-size: 14px;
+font-family: 'Segoe UI';
+width: 75vw;
+height: auto;
+outline: none;
+
+color: rgba(194, 192, 190, 0.827);
+}  
+
+#homedeleveryform input{
+margin: auto;
+padding: 10px;
+width: 80vw;
+font-size: 14px;
+font-family: 'Segoe UI'; 
+color: rgb(44, 42, 55);
+align-self: center;
+outline: none;
+border: solid 1px gray;
+border-radius: 5px;
+} 
+
+#makepayment{
+margin: 30px auto;
+padding: 11px 70px;
+width: auto;
+height: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+border: 0px;
+border-radius: 3px;
+outline: none;
+background-color: red; 
+display: flex; 
+}
+
+}
+
+/* for tablet view */
+@media (min-width: 544px) {
+
+#homedeleveryform {
+margin: auto;
+padding: auto;
+
+
+}
+#deleveryinfo{
+margin: auto;
+padding: 15px;
+
+}  
+
+#deleveryinfo h2{
+margin: auto;
+padding: 10px;
+font-size: 22px;
+font-family: 'Segoe UI';
+
+color: rgb(254, 18, 18);
+text-align: center;
+}
+
+#deleveryinfo li{
+margin: auto;
+padding: 4px;
+font-size: 18px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+list-style-type: none; ;
+color: rgba(3, 3, 3, 0.933);
+}
+
+#homedeleveryform h4{
+margin: auto;
+padding: 10px;
+font-size: 19px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+text-align: center;
+}
+
+#homedeleveryform p{
+margin: auto;
+padding: 10px;
+font-size: 14px;
+font-family: 'Segoe UI'; 
+color: rgb(44, 42, 55);
+text-align: center;
+}
+
+#homedeleveryform .select{
+margin: auto;
+padding:10px;
+font-size: 14px;
+font-family: 'Segoe UI';
+width: 55vw;
+height: auto;
+outline: none;
+
+color: rgba(194, 192, 190, 0.827);
+}  
+
+#homedeleveryform input{
+margin: auto;
+padding: 10px;
+width: 55vw;
+font-size: 14px;
+font-family: 'Segoe UI'; 
+color: rgb(44, 42, 55);
+align-self: center;
+outline: none;
+border: solid 1px gray;
+border-radius: 5px;
+} 
+
+#makepayment{
+margin: 30px auto;
+padding: 11px 70px;
+width: auto;
+height: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+border: 0px;
+border-radius: 3px;
+outline: none;
+background-color: red; 
+display: flex; 
+}
+
+
+
+}
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+#homedeleveryform {
+margin: auto;
+padding: auto;
+
+
+}
+#deleveryinfo{
+margin: auto;
+padding: 15px;
+
+}  
+
+#deleveryinfo h2{
+margin: auto;
+padding: 10px;
+font-size: 22px;
+font-family: 'Segoe UI';
+
+color: rgb(254, 18, 18);
+text-align: center;
+}
+
+#deleveryinfo li{
+margin: auto;
+padding: 4px;
+font-size: 18px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+list-style-type: none; ;
+color: rgba(3, 3, 3, 0.933);
+}
+
+#homedeleveryform h4{
+margin: auto;
+padding: 10px;
+font-size: 19px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+text-align: center;
+}
+
+#homedeleveryform p{
+margin: auto;
+padding: 10px;
+font-size: 14px;
+font-family: 'Segoe UI'; 
+color: rgb(44, 42, 55);
+text-align: center;
+}
+
+#homedeleveryform .select{
+margin: auto;
+padding:10px;
+font-size: 14px;
+font-family: 'Segoe UI';
+width: 45vw;
+height: auto;
+outline: none;
+
+color: rgba(194, 192, 190, 0.827);
+}  
+
+#homedeleveryform input{
+margin: auto;
+padding: 10px;
+width: 45vw;
+font-size: 14px;
+font-family: 'Segoe UI'; 
+color: rgb(44, 42, 55);
+align-self: center;
+outline: none;
+border: solid 1px gray;
+border-radius: 5px;
+} 
+
+#makepayment{
+margin: 30px auto;
+padding: 11px 70px;
+width: auto;
+height: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+border: 0px;
+border-radius: 3px;
+outline: none;
+background-color: red; 
+display: flex; 
+}
+
+
+
+}

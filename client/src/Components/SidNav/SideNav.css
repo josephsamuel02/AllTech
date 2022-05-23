@@ -1,0 +1,155 @@
+/* Mobile view */
+@media (max-width: 543px) {
+
+a {
+text-decoration: none;
+}
+
+.sidenav {
+margin: 0px;
+padding: 0px;
+
+position: fixed;
+top: 116px;
+right: 0px;
+bottom: 0px;
+height: 100%; 
+width: 40vw;
+
+background-color:rgba(255, 255, 255, 0);
+backdrop-filter: blur(7px);
+box-shadow: 1px 1px 2px 1px rgba(192, 192, 192, 0.397);
+/* z-index: 0; */
+
+transition: 0.6s;
+
+}
+
+#navcontainer{
+margin: 4px;
+padding: 20px 1px;
+max-width: 100%;
+height: 100%;
+display: block;
+list-style-type: none;
+}
+
+
+
+#navcontainer p{
+margin:2px;
+padding: 10px 5px; 
+font-size: 14px;
+font-family:"segoe UI"; 
+/* font-weight: lighter; */
+color: black;
+border-bottom: solid 1px red;
+list-style-type: none;
+cursor: pointer;
+}
+
+
+}
+
+/* for tablet view */
+@media (min-width: 544px) {
+
+a {
+text-decoration: none;
+}
+
+.sidenav {
+margin: 0px;
+padding: 0px;
+
+position: fixed;
+top: 117px;
+right: 0px;
+bottom: 0px;
+height: 100%; 
+max-width: 35vw;
+
+background-color:rgba(255, 255, 255, 0);
+backdrop-filter: blur(7px);
+box-shadow: 1px 1px 2px 1px rgba(192, 192, 192, 0.397);
+/* z-index: 0; */
+
+transition: 0.6s;
+
+}
+
+#navcontainer{
+margin: 4px;
+padding: 20px 1px;
+max-width: 100%;
+height: 100%;
+display: block;
+list-style-type: none;
+}
+
+
+
+#navcontainer p{
+margin:2px 15px;
+padding: 10px; 
+font-size: 18px;
+font-family:"segoe UI"; 
+color: rgb(18, 2, 59);
+border-bottom: solid 1px red;
+list-style-type: none;
+cursor: pointer;
+}
+
+
+}
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+a {
+text-decoration: none;
+}
+
+.sidenav {
+margin: 0px;
+padding: 0px;
+
+position: fixed;
+top: 117px;
+right: 0px;
+bottom: 0px;
+height: 100%; 
+max-width: 26vw;
+
+background-color:rgba(255, 255, 255, 0);
+backdrop-filter: blur(7px);
+box-shadow: 1px 1px 2px 1px rgba(192, 192, 192, 0.397);
+
+
+transition: 0.6s;
+
+}
+
+#navcontainer{
+margin: 4px;
+padding: 20px 1px;
+width: 100%;
+height: 100%;
+display: block;
+list-style-type: none;
+}
+
+
+
+#navcontainer p{
+margin:2px 15px;
+padding: 10px; 
+font-size: 18px;
+font-family:"segoe UI"; 
+color: rgb(18, 2, 59);
+border-bottom: solid 1px red;
+list-style-type: none;
+cursor: pointer;
+}
+
+
+}

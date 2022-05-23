@@ -1,0 +1,239 @@
+/* Mobile view */
+@media (max-width: 543px) {
+
+#pickUpForm{
+margin: 0px;
+padding: 8px;
+
+
+}
+
+#deleveryinfo{
+margin: auto;
+padding: 0px;
+
+}
+
+
+#deleveryinfo h2{
+margin: auto;
+padding: 10px;
+font-size: 22px;
+font-family: 'Segoe UI';
+/* font-weight: lighter; */
+color: rgb(254, 18, 18);
+text-align: center;
+}
+
+#deleveryinfo li{
+margin: auto;
+padding: 4px;
+font-size: 18px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+list-style-type: none; ;
+color: rgba(3, 3, 3, 0.933);
+}
+
+
+
+#pickUpForm .select{
+margin: 0px;
+padding:10px;
+font-size: 14px;
+font-family: 'Segoe UI';
+width: 75vw;
+height: auto;
+outline: none;
+
+color: rgba(194, 192, 190, 0.827);
+} 
+
+
+#makepayment{
+margin: 30px auto;
+padding: 11px 70px;
+width: auto;
+height: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+border: 0px;
+border-radius: 3px;
+outline: none;
+background-color: red;
+
+
+
+display: flex; 
+}
+
+
+#makepayment:hover{
+background-color: rgb(214, 67, 8);
+}
+}
+
+/* for tablet view */
+@media (min-width: 544px) {
+    
+#pickUpForm{
+margin: 0px;
+padding: 8px;
+
+
+}
+ 
+
+#deleveryinfo{
+margin: auto;
+padding: 0px;
+
+}
+
+
+#deleveryinfo h2{
+margin: auto;
+padding: 10px;
+font-size: 22px;
+font-family: 'Segoe UI';
+/* font-weight: lighter; */
+color: rgb(254, 18, 18);
+text-align: center;
+}
+
+#deleveryinfo li{
+margin: auto;
+padding: 4px;
+font-size: 18px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+list-style-type: none; ;
+color: rgba(3, 3, 3, 0.933);
+}
+ 
+
+#pickUpForm .select{
+margin: 0px;
+padding:10px;
+font-size: 14px;
+font-family: 'Segoe UI';
+width: 300px;
+height: auto;
+outline: none;
+
+color: rgba(194, 192, 190, 0.827);
+} 
+
+
+#makepayment{
+margin: 30px auto;
+padding: 11px 70px;
+width: auto;
+height: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+border: 0px;
+border-radius: 3px;
+outline: none;
+background-color: red;
+
+
+
+display: flex; 
+}
+
+#makepayment:hover{
+background-color: rgb(214, 67, 8);
+}
+
+
+}
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+
+#pickUpForm{
+margin: 0px;
+padding: 8px;
+
+
+}
+
+
+#deleveryinfo{
+margin: auto;
+padding: 0px;
+
+}
+
+
+#deleveryinfo h2{
+margin: auto;
+padding: 10px;
+font-size: 22px;
+font-family: 'Segoe UI';
+/* font-weight: lighter; */
+color: rgb(254, 18, 18);
+text-align: center;
+}
+
+#deleveryinfo li{
+margin: auto;
+padding: 4px;
+font-size: 18px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+list-style-type: none; ;
+color: rgba(3, 3, 3, 0.933);
+}
+
+ 
+
+#pickUpForm .select{
+margin: 0px;
+padding:10px;
+font-size: 14px;
+font-family: 'Segoe UI';
+width: 330px;
+height: auto;
+outline: none;
+
+color: rgba(194, 192, 190, 0.827);
+} 
+ 
+
+#makepayment{
+margin: 30px auto;
+padding: 11px 70px;
+width: auto;
+height: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+border: 0px;
+border-radius: 3px;
+outline: none;
+background-color: red;
+
+
+
+display: flex; 
+}
+
+#makepayment:hover{
+background-color: rgb(214, 67, 8);
+}
+
+}
+

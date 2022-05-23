@@ -1,0 +1,31 @@
+.chartGraph {
+    margin: 10px;
+    padding: 1px;
+
+    position: fixed;
+    /* height: 200px; */
+    top: 7%;
+    bottom: 55%;
+    left: 28%;
+    right: 2px;
+    color: rgb(0, 0, 0);
+}
+.chartbtn {
+    margin: 1px 3px;
+    padding: 5px 14px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    font-family: sans-serif;
+    font-weight: 19px;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 2px 1px silver;
+}
+
+.chartbtn:hover {
+    box-shadow: 2px 2px 2px 1px silver;
+    padding: 5px 16px;
+}

@@ -1,0 +1,223 @@
+a {
+    text-decoration: none;
+}
+/* Mobile view */
+@media (max-width: 543px) {
+}
+
+/* for tablet view */
+@media (min-width: 544px) {
+    .orderslist {
+        margin: 0px;
+        padding: 5px;
+        max-width: 100%;
+        max-height: 100%;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 27%;
+        right: 0px;
+    }
+    .orderheader {
+        margin: 10px 10px 20px;
+        padding: 3px;
+        color: rgb(73, 71, 71);
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+    }
+
+    .orderbtns {
+        margin: 10px 4px;
+        padding: 2px;
+        max-width: 100%;
+        height: 30px;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .orderbtns button {
+        margin: auto;
+        padding: 5px 15px;
+
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        font-family: sans-serif;
+        display: flex;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 1px 1px 2px 1px silver;
+        justify-content: center;
+    }
+
+    .orderbtns button:hover {
+        box-shadow: 1px 1px 4px 1px rgba(138, 138, 138, 0.822);
+    }
+
+    .orderbtns button p {
+        margin: auto;
+        padding: 0px 5px;
+    }
+    .orderbox {
+        margin: 5px;
+        padding: 10px;
+        max-height: 83%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: scroll;
+
+        box-shadow: 1px 1px 2px 1px rgba(184, 184, 187, 0.575),
+            -1px -1px 2px 1px rgba(184, 184, 187, 0.575);
+        border-radius: 30px;
+    }
+
+    .completed {
+        max-height: 100%;
+        overflow: scroll;
+    }
+
+    .processing {
+        height: 91%;
+        overflow: scroll;
+    }
+
+    .neworders {
+        height: 98%;
+        overflow: scroll;
+    }
+
+    .orderbox .ordercard {
+        margin: 15px 10px;
+        padding: 5px;
+        height: 160px;
+        width: 240px;
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+
+        box-shadow: 1px 1px 2px 1px rgba(146, 143, 143, 0.397),
+            -1px -1px 2px 1px rgba(146, 143, 143, 0.397);
+    }
+    .ordercard:hover {
+        box-shadow: 1px 1px 5px 1px rgba(146, 143, 143, 0.301),
+            1px 1px 5px 1px rgba(146, 143, 143, 0.657);
+    }
+    /* .orderbox .ordercard img {
+        margin: 2px;
+        padding: 0px;
+        width: 38%;
+        height: 98%;
+        border-radius: 12px;
+        object-fit: cover;
+        object-position: center;
+    } */
+
+    .orderbox .ordercard .detail {
+        margin: 1px;
+        padding: 1px;
+        width: 100%;
+        max-height: 88%;
+        border: solid 2px rgba(192, 192, 192, 0.39);
+        display: block;
+        border-radius: 20px;
+    }
+
+    .ordercard .detail .username {
+        margin: 5px 5px 8px;
+        padding: 0px;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: ;
+    }
+
+    .ordercard .detail ul {
+        margin: 2px 0px 0px;
+        padding: 0px;
+        list-style-type: none;
+        max-width: 100%;
+        height: 65%;
+        display: block;
+    }
+
+    .detail ul li {
+        margin: 1px;
+        padding: 3px 4px;
+
+        font-size: 13px;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    .ordercard .detail .stats {
+        margin: 0px 3px 3px;
+        padding: 1px;
+        display: flex;
+        flex-direction: row;
+        height: 10%;
+    }
+    .ordercard .detail span {
+        margin: 0px 5px;
+        padding: 0px;
+        color: white;
+    }
+    .detail .stats p {
+        margin: 0px auto;
+        padding: 0px;
+        font-size: 13px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    .procbtn {
+        margin: 10px 4px;
+        padding: 2px;
+        max-width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .procbtn button {
+        margin: auto;
+        padding: 5px 15px;
+
+        background-color: white;
+        color: black;
+        font-size: 12px;
+        font-family: sans-serif;
+        display: flex;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 1px 1px 2px 1px silver;
+        justify-content: center;
+    }
+
+    .procbtn button:hover {
+        box-shadow: 1px 1px 4px 1px rgba(138, 138, 138, 0.822);
+    }
+    .proclevelwrap {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .proclevel {
+        margin: 0px;
+        padding: 0px;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+    .showsidenav {
+        display: none;
+    }
+}

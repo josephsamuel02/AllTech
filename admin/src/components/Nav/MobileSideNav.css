@@ -1,0 +1,22 @@
+/* Mobile view */
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 543px) {
+}
+
+/* for tablet view */
+@media (min-width: 544px) {
+    .mobileSidNav {
+        display: none;
+    }
+}
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+    .mobileSidNav {
+        display: none;
+    }
+}

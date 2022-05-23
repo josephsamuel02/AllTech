@@ -1,0 +1,25 @@
+.shops {
+    margin: 0px;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 27%;
+    right: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(233, 20, 20);
+}
+
+img {
+    margin: auto;
+    padding: auto;
+
+    display: flex;
+    height: 300px;
+    width: 500px;
+}

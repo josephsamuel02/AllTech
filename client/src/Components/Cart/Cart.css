@@ -1,0 +1,678 @@
+/* Mobile view */
+@media (max-width: 543px) {
+    
+#cartpage {
+margin: 15px 0px ;
+padding: 0px;
+}
+
+.cartCard {
+margin: 20px 10px;
+padding: 0px;
+
+width: 95%;
+height: 140px;
+
+display: flex;
+flex-direction: row;
+background-color: white;
+border-radius: 2px;
+box-shadow: 1px 1px 2px 1px rgba(224, 225, 228, 0.868);
+}
+
+.cartCard .productimage {
+margin: 0px;
+padding: 0px;
+height: 100%;
+width: auto;
+}
+
+.productimage img {
+margin: 0px;
+padding: 0px;
+height: 100%;
+width: 140px;
+
+object-fit: cover;
+object-position: center;
+
+border-radius: 1px;
+}
+
+.cartCard .itemdetails {
+margin: 0px;
+padding: 5px;
+
+display: flex;
+flex-direction: column;
+
+width: auto;
+height: auto;
+}
+
+.cartCard .productname {
+margin: auto 0px;
+padding: 3px;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: rgb(3, 1, 0);
+}
+
+.cartCard .productprice {
+margin: 0px;
+padding: 3px;
+font-size: 16px;
+font-family: 'Segoe UI'; 
+color: black;
+}
+
+.cartCard .productprice span{
+margin: 0px;
+padding: 0px;
+
+font-size: 18px;
+font-family: 'Segoe UI';
+/* font-weight: lighter; */
+
+color: rgb(26, 180, 2);
+}
+
+.cartCard .quantity {
+margin: 0px;
+padding: 3px;
+
+font-size: 12px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+
+color: black;
+}
+
+.cartCard #removeItem {
+margin: 70px 4px 4px auto;
+padding: 4px 10px;
+
+
+font-size: 12px;
+font-family: sans-serif;
+font-weight: lighter;
+float: right;
+color: rgb(233, 57, 30);
+
+border: solid 0px white;
+background-color: white;
+border-radius: 50px;
+}
+
+.cartCard #removeItem:hover {
+
+background-color: rgba(252, 233, 230, 0.274);
+
+}
+
+#sumtotal{
+margin: 10px  ;
+padding: 5px;
+
+
+font-size: 18px;
+font-family: sans-serif;
+font-weight: lighter;
+
+color: rgb(1, 5, 48);
+
+
+}
+
+#sumtotalunit{
+margin: 0px;
+padding: 0px;
+
+font-size: 19px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+
+color: rgb(1, 5, 48);
+
+
+}
+
+#naira{
+margin: 0px;
+padding: 0px;
+
+
+font-size: 23px;
+font-family: sans-serif;
+font-weight: lighter;
+
+color: rgb(14, 186, 2);
+}
+
+#coninuetoorder{
+margin: 0px auto;
+padding: 10px 20px;
+
+font-size: 17px;
+font-family: 'Segoe UI';
+
+color: white;
+background-color: rgb(239, 20, 20);
+
+display: flex;
+
+
+border-radius: 2px;
+border: 0px;
+outline: 0px;
+}
+
+#deleverymodebox{
+width: 100%;
+height: auto; 
+display: grid;
+align-items: center;
+justify-items: center;
+
+}
+
+#deleverymodebtnbox{
+margin: 15px auto;
+width: 100%;
+height: auto; 
+
+display: flex;
+
+}
+
+.deleverymode{
+margin:   auto;
+padding: 5px 0px 8px;
+width: 42vw;
+height: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+color: red;
+background-color:white;
+
+
+
+
+outline: none;
+border: solid 2px rgb(240, 122, 101);
+border-radius: 5px;
+}
+
+#orderhistory{
+margin: 40px 20px 2px;
+padding: 5px 20px 8px;
+width: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI'; 
+color: rgb(1, 19, 32);
+background-color:white;
+
+outline: none;
+border: solid 2px rgb(40, 39, 39);
+border-radius: 2px;
+}
+
+
+
+}
+
+/* for tablet view */
+@media (min-width: 544px) {
+
+#cartpage {
+margin: 15px 0px ;
+padding: 0px;
+}
+
+.cartCard {
+margin: 20px 10px;
+padding: 0px;
+
+width: 95%;
+height: 140px;
+
+display: flex;
+flex-direction: row;
+background-color: white;
+border-radius: 2px;
+box-shadow: 1px 1px 2px 1px rgba(224, 225, 228, 0.868);
+}
+
+.cartCard .productimage {
+margin: 0px;
+padding: 0px;
+height: 100%;
+width: auto;
+}
+
+.productimage img {
+margin: 0px;
+padding: 0px;
+height: 100%;
+width: 140px;
+
+object-fit: cover;
+object-position: center;
+
+border-radius: 1px;
+}
+
+.cartCard .itemdetails {
+margin: 0px;
+padding: 5px;
+
+display: flex;
+flex-direction: column;
+
+width: auto;
+height: auto;
+}
+
+.cartCard .productname {
+margin: auto 0px;
+padding: 3px;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: rgb(3, 1, 0);
+}
+
+.cartCard .productprice {
+margin: 0px;
+padding: 3px;
+font-size: 16px;
+font-family: 'Segoe UI'; 
+color: black;
+}
+
+.cartCard .productprice span{
+margin: 0px;
+padding: 0px;
+
+font-size: 18px;
+font-family: 'Segoe UI';
+/* font-weight: lighter; */
+
+color: rgb(26, 180, 2);
+}
+
+.cartCard .quantity {
+margin: 0px;
+padding: 3px;
+
+font-size: 12px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+
+color: black;
+}
+
+.cartCard #removeItem {
+margin: 70px 4px 4px auto;
+padding: 4px 10px;
+
+
+font-size: 12px;
+font-family: sans-serif;
+font-weight: lighter;
+float: right;
+color: rgb(233, 57, 30);
+
+border: solid 0px white;
+background-color: white;
+border-radius: 50px;
+}
+
+.cartCard #removeItem:hover {
+
+background-color: rgba(252, 233, 230, 0.274);
+
+}
+
+#sumtotal{
+margin: 10px  ;
+padding: 5px;
+
+
+font-size: 18px;
+font-family: sans-serif;
+font-weight: lighter;
+
+color: rgb(1, 5, 48);
+
+
+}
+
+#sumtotalunit{
+margin: 0px;
+padding: 0px;
+
+font-size: 19px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+
+color: rgb(1, 5, 48);
+
+
+}
+
+#naira{
+margin: 0px;
+padding: 0px;
+
+
+font-size: 23px;
+font-family: sans-serif;
+font-weight: lighter;
+
+color: rgb(14, 186, 2);
+} 
+
+#coninuetoorder{
+margin: 0px auto;
+padding: 10px 20px;
+
+font-size: 17px;
+font-family: 'Segoe UI';
+
+color: white;
+background-color: rgb(239, 20, 20);
+
+display: flex;
+
+
+border-radius: 2px;
+border: 0px;
+outline: 0px;
+}
+
+#deleverymodebox{
+width: 100%;
+height: auto; 
+display: grid;
+align-items: center;
+justify-items: center;
+
+}
+
+#deleverymodebtnbox{
+margin: 15px auto;
+width: 100%;
+height: auto; 
+
+display: flex;
+
+}
+.deleverymode{
+margin:   auto ;
+padding: 5px 0px 8px;
+width: 46vw;
+height: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI'; 
+color: red;
+background-color:white;
+
+
+outline: none;
+border: solid 2px rgb(240, 122, 101);
+border-radius: 5px;
+}
+
+#orderhistory{
+margin: 40px 20px 2px;
+padding: 5px 20px 8px;
+width: 30vw;
+
+font-size: 15px;
+font-family: 'Segoe UI'; 
+color: rgb(1, 19, 32);
+background-color:white;
+
+outline: none;
+border: solid 2px rgb(40, 39, 39);
+border-radius: 2px;
+}
+
+
+}
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+
+#cartpage {
+margin: 15px 0px ;
+padding: 0px;
+}
+
+.cartCard {
+margin: 20px 10px;
+padding: 0px;
+
+width: 95%;
+height: 140px;
+
+display: flex;
+flex-direction: row;
+background-color: white;
+border-radius: 2px;
+box-shadow: 1px 1px 2px 1px rgba(224, 225, 228, 0.868);
+}
+
+.cartCard .productimage {
+margin: 0px;
+padding: 0px;
+height: 100%;
+width: auto;
+}
+
+.productimage img {
+margin: 0px;
+padding: 0px;
+height: 100%;
+width: 140px;
+
+object-fit: cover;
+object-position: center;
+
+border-radius: 1px;
+}
+
+.cartCard .itemdetails {
+margin: 0px;
+padding: 5px;
+
+display: flex;
+flex-direction: column;
+
+width: auto;
+height: auto;
+}
+
+.cartCard .productname {
+margin: auto 0px;
+padding: 3px;
+
+font-size: 15px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: rgb(3, 1, 0);
+}
+
+.cartCard .productprice {
+margin: 0px;
+padding: 3px;
+font-size: 16px;
+font-family: 'Segoe UI'; 
+color: black;
+}
+
+.cartCard .productprice span{
+margin: 0px;
+padding: 0px;
+
+font-size: 18px;
+font-family: 'Segoe UI';
+/* font-weight: lighter; */
+
+color: rgb(26, 180, 2);
+}
+
+.cartCard .quantity {
+margin: 0px;
+padding: 3px;
+
+font-size: 12px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+
+color: black;
+}
+
+.cartCard #removeItem {
+margin: 70px 4px 4px auto;
+padding: 4px 10px;
+
+
+font-size: 12px;
+font-family: sans-serif;
+font-weight: lighter;
+float: right;
+color: rgb(233, 57, 30);
+
+border: solid 0px white;
+background-color: white;
+border-radius: 50px;
+}
+
+.cartCard #removeItem:hover {
+
+background-color: rgba(252, 233, 230, 0.274);
+
+}
+
+#sumtotal{
+margin: 10px  ;
+padding: 5px;
+
+
+font-size: 18px;
+font-family: sans-serif;
+font-weight: lighter;
+
+color: rgb(1, 5, 48);
+
+
+}
+
+#sumtotalunit{
+margin: 0px;
+padding: 0px;
+
+font-size: 19px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+
+color: rgb(1, 5, 48);
+
+
+}
+
+#naira{
+margin: 0px;
+padding: 0px;
+
+
+font-size: 23px;
+font-family: sans-serif;
+font-weight: lighter;
+
+color: rgb(14, 186, 2);
+}
+
+#coninuetoorder{
+margin: 0px auto;
+padding: 10px 20px;
+
+font-size: 17px;
+font-family: 'Segoe UI';
+
+color: white;
+background-color: rgb(239, 20, 20);
+
+display: flex;
+
+
+border-radius: 2px;
+border: 0px;
+outline: 0px;
+}
+
+#deleverymodebox{
+width: 100%;
+height: auto; 
+display: grid;
+align-items: center;
+justify-items: center;
+
+}
+
+#deleverymodebtnbox{
+margin: 15px auto;
+width: 100%;
+height: auto; 
+
+display: flex;
+
+}
+
+.deleverymode{
+margin:   auto ;
+padding: 5px 0px 8px;
+width: 29vw;
+height: auto;
+
+
+font-size: 15px;
+font-family: 'Segoe UI'; 
+color: red;
+background-color:white;
+
+
+outline: none;
+border: solid 2px rgb(240, 122, 101);
+border-radius: 5px;
+}
+
+#orderhistory{
+margin: 40px 20px 2px;
+padding: 5px 20px 8px;
+width: 30vw;
+
+font-size: 15px;
+font-family: 'Segoe UI'; 
+color: rgb(1, 19, 32);
+background-color:white;
+
+outline: none;
+border: solid 2px rgb(40, 39, 39);
+border-radius: 2px;
+}
+
+
+
+
+}
+
+

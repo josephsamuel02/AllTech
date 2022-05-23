@@ -1,0 +1,61 @@
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+
+#footer{
+    margin: 0px;
+    height: 240px;
+    background-color: rgb(184, 4, 4);
+    display: flex;
+}
+
+#footer ul{
+   margin:20px auto;
+   padding: 20px;
+   width: 75%;
+   max-height: 150px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap; 
+   list-style-type: none;
+}
+
+
+#footer ul li{
+    margin:  auto;
+    padding: 20px;
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+
+    font-size: 17px;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    color: white;
+
+ }
+
+
+ #footer ul li span{
+    margin:  0px;
+    padding: 0px;
+
+
+    display: flex;
+    flex-direction: row;
+  
+
+
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    color: white;
+
+ }

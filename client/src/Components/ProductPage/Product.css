@@ -1,0 +1,403 @@
+
+
+/* Mobile view */
+@media (max-width: 543px) {
+
+
+    #productpage {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .productCard {
+        margin: 10px auto ;
+        padding: 20px 10px;
+        max-width: 85%; 
+        align-self: center;
+        z-index: 1;
+       
+        flex-direction: column;
+        
+     border-radius: 4px;
+        box-shadow: 1px 1px 3px 2px rgba(192, 192, 192, 0.264);
+    }
+    
+    .productCard .imageBox {
+        margin: auto;
+        padding: 0px;
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    
+    .imageBox img {
+        margin: 0px auto;
+        padding: 0px;
+        width: 390px;
+        height: 230px;
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+    }
+    
+    .detail {
+        margin: auto;
+        padding: 15px;
+        height: auto;
+        width: auto;
+    }
+    
+    .detail .name {
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+        font-family: 'segoe UI';
+        color: black;
+    }
+    
+    .detail .description {
+        margin: 10px auto;
+        padding: 0px;
+        word-wrap: break-word;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .detail .description p {
+        margin: 0px auto;
+        padding: 0px;
+
+        font-size: 16px;
+        font-family: 'Segoe UI';
+        font-weight: lighter;
+        word-wrap: break-word;
+        color: black;
+    }
+
+    .detail .price {
+        margin: 15px auto;
+        padding: 0px;
+    
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Segoe UI' ;
+        font-weight: lighter;
+        color: black;
+    }
+    
+    .detail .price span{
+        margin: 10px auto;
+        padding: 0px;
+    
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Segoe UI' ;
+        font-weight: lighter;
+        color: green;
+    }
+    
+    .detail .quantity {
+        margin: auto;
+        padding: 2px;
+    
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: 'segoe UI';
+        text-align: center;
+        color: black;
+        display: flex;
+    }
+    
+    .detail button {
+        margin: 2px auto;
+        padding: 4px 28px;
+    
+        font-family: 'segoe UI';
+        font-size: 15px;
+        font-weight: lighter;
+        text-align: center;
+    
+        outline: none;
+        color: white;
+        background-color: rgb(232, 14, 14);
+        border-radius: 3px;
+        border:  0px;
+        box-shadow: 1px 1px 4px 2px  rgba(192, 192, 192, 0.388);
+    }
+
+    .detail button:hover {
+        background-color: rgb(209, 15, 15);
+
+    }
+
+
+}
+
+/* for tablet view */
+@media (min-width: 544px) {
+
+    #productpage {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .productCard {
+        margin: 10px auto ;
+        padding: 20px 10px;
+        max-width: 65%; 
+        align-self: center;
+        z-index: 1;
+       
+        flex-direction: column;
+        
+     border-radius: 4px;
+        box-shadow: 1px 1px 3px 2px rgba(192, 192, 192, 0.264);
+    }
+    
+    .productCard .imageBox {
+        margin: auto;
+        padding: 0px;
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    
+    .imageBox img {
+        margin: 0px auto;
+        padding: 0px;
+        width: 500px;
+        height: 330px;
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+    }
+    
+    .detail {
+        margin: auto;
+        padding: 15px;
+        height: auto;
+        width: auto;
+    }
+    
+    .detail .name {
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+        font-family: 'segoe UI';
+        color: black;
+    }
+    
+    .detail .description {
+        margin: 10px auto;
+        padding: 0px;
+        word-wrap: break-word;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .detail .description p {
+        margin: 0px auto;
+        padding: 0px;
+
+        font-size: 16px;
+        font-family: 'Segoe UI';
+        font-weight: lighter;
+        word-wrap: break-word;
+        color: black;
+    }
+
+    .detail .price {
+        margin: 15px auto;
+        padding: 0px;
+    
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Segoe UI' ;
+        font-weight: lighter;
+        color: black;
+    }
+    
+    .detail .price span{
+        margin: 10px auto;
+        padding: 0px;
+    
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Segoe UI' ;
+        font-weight: lighter;
+        color: green;
+    }
+    
+    .detail .quantity {
+        margin: auto;
+        padding: 2px;
+    
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: 'segoe UI';
+        text-align: center;
+        color: black;
+        display: flex;
+    }
+    
+    .detail button {
+        margin: 2px auto;
+        padding: 4px 28px;
+    
+        font-family: 'segoe UI';
+        font-size: 15px;
+        font-weight: lighter;
+        text-align: center;
+    
+        outline: none;
+        color: white;
+        background-color: rgb(232, 14, 14);
+        border-radius: 3px;
+        border:  0px;
+        box-shadow: 1px 1px 4px 2px  rgba(192, 192, 192, 0.388);
+    }
+
+    .detail button:hover {
+        background-color: rgb(209, 15, 15);
+
+    }
+
+
+}
+
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+
+
+    #productpage {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .productCard {
+        margin: 10px auto ;
+        padding: 20px 10px;
+        max-width: 55%; 
+        align-self: center;
+        z-index: 1;
+       
+        flex-direction: column;
+        
+     border-radius: 4px;
+        box-shadow: 1px 1px 3px 2px rgba(192, 192, 192, 0.264);
+    }
+    
+    .productCard .imageBox {
+        margin: auto;
+        padding: 0px;
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    
+    .imageBox img {
+        margin: 0px auto;
+        padding: 0px;
+        width: 500px;
+        height: 330px;
+        object-fit: cover;
+        object-position: center;
+        display: flex;
+    }
+    
+    .detail {
+        margin: auto;
+        padding: 15px;
+        height: auto;
+        width: auto;
+    }
+    
+    .detail .name {
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+        font-family: 'segoe UI';
+        color: black;
+    }
+    
+    .detail .description {
+        margin: 10px auto;
+        padding: 0px;
+        word-wrap: break-word;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .detail .description p {
+        margin: 0px auto;
+        padding: 0px;
+
+        font-size: 16px;
+        font-family: 'Segoe UI';
+        font-weight: lighter;
+        word-wrap: break-word;
+        color: black;
+    }
+
+    .detail .price {
+        margin: 15px auto;
+        padding: 0px;
+    
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Segoe UI' ;
+        font-weight: lighter;
+        color: black;
+    }
+    
+    .detail .price span{
+        margin: 10px auto;
+        padding: 0px;
+    
+        font-size: 23px;
+        font-weight: bold;
+        font-family: 'Segoe UI' ;
+        font-weight: lighter;
+        color: green;
+    }
+    
+    .detail .quantity {
+        margin: auto;
+        padding: 2px;
+    
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: 'segoe UI';
+        text-align: center;
+        color: black;
+        display: flex;
+    }
+    
+    .detail button {
+        margin: 2px auto;
+        padding: 4px 28px;
+    
+        font-family: 'segoe UI';
+        font-size: 15px;
+        font-weight: lighter;
+        text-align: center;
+    
+        outline: none;
+        color: white;
+        background-color: rgb(232, 14, 14);
+        border-radius: 3px;
+        border:  0px;
+        box-shadow: 1px 1px 4px 2px  rgba(192, 192, 192, 0.388);
+    }
+
+    .detail button:hover {
+        background-color: rgb(209, 15, 15);
+
+    }
+
+
+
+}
+
+

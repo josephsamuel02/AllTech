@@ -1,0 +1,465 @@
+
+
+/* Mobile view */
+@media (max-width: 543px) {
+
+a {
+text-decoration: none;
+}
+
+.CategoryList {
+margin: 0px;
+padding: 0px;
+
+background-color: white;
+}
+
+#categoryname{
+margin: 3px 20px;
+padding: 3px;
+
+font-size: 27px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+}
+
+.filterBox {
+margin: 5px 0px ;
+padding: 2px;
+
+display: flex;
+flex-direction: row;
+align-items: left;
+}
+.select{
+margin: 1px 5px;
+padding: 2px;
+outline: none; 
+
+}
+
+.CstegoryBox {
+margin: 0px;
+padding: 0px;
+display: flex;
+flex-wrap: wrap;
+background-color: white; 
+}
+
+.categoryCard {
+margin: 10px auto 15px;
+padding: 0px;
+height: 280px;
+max-width: 160px;
+text-decoration: none;
+border-radius: 4px;
+box-shadow: 1px 1px 2px 1px rgba(217, 218, 219, 0.351);
+
+display: block;
+}
+
+.categoryCard img {
+margin: 0px;
+padding: 0px;
+height: 160px;
+width: 160px;
+
+object-fit: cover;
+object-position: center;
+border-radius: 2px;
+}
+
+.categoryCard .Details {
+margin: 0px 1px;
+padding: 2px;
+height: 70px;
+}
+.Details h2 {
+margin: 0px;
+padding: 1px;
+
+height: 40px;
+overflow: hidden;
+font-size: 11px;
+font-weight: lighter;
+font-family: 'segoe UI';
+
+word-wrap: break-word;
+}
+
+.Details p {
+margin: 0px;
+padding: 2px;
+
+font-size: 11px; 
+font-family: 'segoe UI';;
+}
+.Details p span{
+margin: 0px;
+padding: 0px;
+color: green;
+font-size: 11px;
+font-weight: bold;
+font-family: 'segoe UI';
+}
+
+
+.actions{
+margin: 2px;
+padding: 0px;
+display: flex;
+flex-direction: row; 
+align-items: center;
+}
+
+.quantity{
+margin: 0px auto;
+padding: 5px 0px;
+
+}
+
+.quantity select{
+margin: 0px auto;
+padding: 0px ;
+width: 40px;
+height: auto;
+border: solid 2px rgba(128, 129, 133, 0.288);
+border-radius: 3px;
+outline: none;
+text-align: center;
+
+
+font-size: 11px;
+font-weight: lighter;
+font-family: 'segoe UI';
+color: rgb(48, 47, 47);
+}
+
+
+.actions button{
+margin: 0px auto;
+padding: 0px 5px ;
+width: auto;
+height: 25px;
+
+text-align: center;
+font-size: 11px;
+font-family: 'segoe UI';
+color: white;
+
+border: 0px;
+border-radius: 4px;
+outline: none;
+background-color: red;
+}
+
+}
+
+
+/* for tablet view */
+@media (min-width: 544px) {
+
+
+a {
+text-decoration: none;
+}
+
+.CategoryList {
+margin: 0px;
+padding: 0px;
+
+background-color: white;
+}
+
+#categoryname{
+margin: 3px 20px;
+padding: 3px;
+
+font-size: 27px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+}
+
+.filterBox {
+margin: 5px 0px ;
+padding: 2px;
+
+display: flex;
+flex-direction: row;
+align-items: left;
+}
+.select{
+margin: 1px 5px;
+padding: 2px;
+outline: none; 
+
+}
+
+.CstegoryBox {
+margin: 0px;
+padding: 0px;
+display: flex;
+flex-wrap: wrap;
+background-color: white;
+}
+
+.categoryCard {
+margin: 10px auto 15px;
+padding: 0px;
+height: 280px;
+max-width: 160px;
+text-decoration: none;
+border-radius: 4px;
+box-shadow: 1px 1px 2px 1px rgba(217, 218, 219, 0.351);
+
+display: block;
+}
+
+.categoryCard img {
+margin: 0px;
+padding: 0px;
+height: 160px;
+width: 160px;
+
+object-fit: cover;
+object-position: center;
+border-radius: 2px;
+}
+
+.categoryCard .Details {
+margin: 0px 1px;
+padding: 2px;
+height: 70px;
+}
+.Details h2 {
+margin: 0px;
+padding: 1px;
+
+height: 40px;
+overflow: hidden;
+font-size: 11px;
+font-weight: lighter;
+font-family: 'segoe UI';
+
+word-wrap: break-word;
+}
+
+.Details p {
+margin: 0px;
+padding: 2px;
+
+font-size: 11px; 
+font-family: 'segoe UI';;
+}
+.Details p span{
+margin: 0px;
+padding: 0px;
+color: green;
+font-size: 11px;
+font-weight: bold;
+font-family: 'segoe UI';
+}
+
+
+.actions{
+margin: 2px;
+padding: 0px;
+display: flex;
+flex-direction: row; 
+align-items: center;
+}
+
+.quantity{
+margin: 0px auto;
+padding: 5px 0px;
+
+}
+
+.quantity select{
+margin: 0px auto;
+padding: 0px ;
+width: 40px;
+height: auto;
+border: solid 2px rgba(128, 129, 133, 0.288);
+border-radius: 3px;
+outline: none;
+text-align: center;
+
+
+font-size: 11px;
+font-weight: lighter;
+font-family: 'segoe UI';
+color: rgb(48, 47, 47);
+}
+
+
+.actions button{
+margin: 0px auto;
+padding: 0px 5px ;
+width: auto;
+height: 25px;
+
+text-align: center;
+font-size: 11px;
+font-family: 'segoe UI';
+color: white;
+
+border: 0px;
+border-radius: 4px;
+outline: none;
+background-color: red;
+}
+}
+
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+a {
+text-decoration: none;
+}
+
+.CategoryList {
+margin: 0px;
+padding: 0px;
+
+background-color: white;
+}
+
+#categoryname{
+margin: 3px 20px;
+padding: 3px;
+
+font-size: 27px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+}
+
+.filterBox {
+margin: 5px 0px ;
+padding: 2px;
+
+display: flex;
+flex-direction: row;
+align-items: left;
+}
+.select{
+margin: 1px 5px;
+padding: 2px;
+outline: none; 
+
+}
+
+.CstegoryBox {
+margin: 0px;
+padding: 0px;
+display: flex;
+flex-wrap: wrap;
+background-color: white;
+}
+
+.categoryCard {
+margin: 10px auto 15px;
+padding: 0px;
+height: 280px;
+max-width: 160px;
+text-decoration: none;
+border-radius: 4px;
+box-shadow: 1px 1px 2px 1px rgba(217, 218, 219, 0.351);
+
+display: block;
+}
+
+.categoryCard img {
+margin: 0px;
+padding: 0px;
+height: 160px;
+width: 160px;
+
+object-fit: cover;
+object-position: center;
+border-radius: 2px;
+}
+
+.categoryCard .Details {
+margin: 0px 1px;
+padding: 2px;
+height: 70px;
+}
+.Details h2 {
+margin: 0px;
+padding: 1px;
+
+height: 40px;
+overflow: hidden;
+font-size: 11px;
+font-weight: lighter;
+font-family: 'segoe UI';
+
+word-wrap: break-word;
+}
+
+.Details p {
+margin: 0px;
+padding: 2px;
+
+font-size: 11px; 
+font-family: 'segoe UI';;
+}
+.Details p span{
+margin: 0px;
+padding: 0px;
+color: green;
+font-size: 11px;
+font-weight: bold;
+font-family: 'segoe UI';
+}
+
+
+.actions{
+margin: 2px;
+padding: 0px;
+display: flex;
+flex-direction: row; 
+align-items: center;
+}
+
+.quantity{
+margin: 0px auto;
+padding: 5px 0px;
+
+}
+
+.quantity select{
+margin: 0px auto;
+padding: 0px ;
+width: 40px;
+height: auto;
+border: solid 2px rgba(128, 129, 133, 0.288);
+border-radius: 3px;
+outline: none;
+text-align: center;
+
+
+font-size: 11px;
+font-weight: lighter;
+font-family: 'segoe UI';
+color: rgb(48, 47, 47);
+}
+
+
+.actions button{
+margin: 0px auto;
+padding: 0px 5px ;
+width: auto;
+height: 25px;
+
+text-align: center;
+font-size: 11px;
+font-family: 'segoe UI';
+color: white;
+
+border: 0px;
+border-radius: 4px;
+outline: none;
+background-color: red;
+}}

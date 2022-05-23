@@ -1,0 +1,362 @@
+/* Mobile view */
+@media (max-width: 543px) {
+
+
+#redister{
+margin: 0px;
+padding: 5px; 
+}
+
+#redister form{
+margin: 30px auto  ;
+padding: 30px 15px;
+
+width: 85%;
+height: auto;
+
+display: flex;
+flex-direction: column;
+background-color: white;
+
+border-radius: 5px;
+box-shadow:  1px 1px 4px 2px rgba(173, 168, 168, 0.222);
+}
+#formlabel{
+    margin: 0px 10px 20px ;
+    padding: 2px;
+
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'segoe UI';
+}
+
+#redister form input{
+margin: 10px auto;
+padding: 10px;
+
+width: 85%;
+height: 30px;
+
+font-size: 14px;
+font-family: 'segoe UI';
+font-weight: lighter;
+color: rgb(38, 35, 35);
+
+outline:none;
+
+border: solid 1px rgb(221, 223, 229);
+border-radius:5px;
+}
+
+
+#redister form #btn{
+margin: 10px auto;
+padding: 10px 20px;
+
+width: 90%;
+height: auto;
+
+font-size: 16px;
+font-family: 'segoe UI';
+font-weight: lighter;
+color: white;
+text-align: center;
+outline:none;
+
+border: solid 1px rgb(221, 223, 229);
+border-radius:4px;
+background-color: red;
+
+}
+
+#redister form #btn:hover{
+
+background-color: rgb(202, 8, 8);
+
+}
+
+
+#warn{
+margin: 0px  auto;
+padding: 0px ;
+
+font-size: 12px;
+font-family: 'segoe UI';
+/* font-weight: lighter; */
+color: red;
+text-align: center;
+
+}
+#refarebox{
+margin: 35px auto 5px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+}
+#refarebox p{
+margin: auto ;
+padding: 2px;
+
+font-size: 14px;
+font-family: 'segoe UI';
+font-weight: lighter;
+
+color: black;
+}
+
+
+#refarebox p span{
+margin: auto ;
+padding: 2px;
+
+font-size: 14px;
+font-family: 'segoe UI';
+font-weight: lighter;
+cursor: pointer;
+color: blue;
+}
+
+
+}
+
+/* for tablet view */
+@media (min-width: 544px) {
+
+    #redister{
+        margin: 0px;
+        padding: 5px; 
+        }
+        
+        #redister form{
+        margin: 30px auto ;
+        padding: 30px 15px;
+        
+        width: 43vw;
+        height: auto;
+        
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        
+        border-radius: 5px;
+        box-shadow:  1px 1px 4px 2px rgba(173, 168, 168, 0.222);
+        }
+        
+        #formlabel{
+            margin: 0px 10px 20px ;
+            padding: 2px;
+        
+            font-size: 20px;
+            font-weight: lighter;
+            font-family: 'segoe UI';
+        }
+        #redister form input{
+        margin: 10px auto;
+        padding: 10px;
+        
+        width: 85%;
+        height: 30px;
+        
+        font-size: 14px;
+        font-family: 'segoe UI';
+        font-weight: lighter;
+        color: rgb(38, 35, 35);
+        
+        outline:none;
+        
+        border: solid 1px rgb(221, 223, 229);
+        border-radius:5px;
+        }
+        
+        
+        #redister form #btn{
+        margin: 10px auto;
+        padding: 10px 20px;
+        
+        width: 90%;
+        height: auto;
+        
+        font-size: 16px;
+        font-family: 'segoe UI';
+        font-weight: lighter;
+        color: white;
+        text-align: center;
+        outline:none;
+        
+        border: solid 1px rgb(221, 223, 229);
+        border-radius:4px;
+        background-color: red;
+        
+        }
+        
+        #redister form #btn:hover{
+        
+        background-color: rgb(202, 8, 8);
+        
+        }
+        
+        
+        #warn{
+        margin: 0px  auto;
+        padding: 0px ;
+        
+        font-size: 12px;
+        font-family: 'segoe UI';
+        /* font-weight: lighter; */
+        color: red;
+        text-align: center;
+        
+        }
+        #refarebox{
+        margin: 35px auto 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        }
+        #refarebox p{
+        margin: auto ;
+        padding: 2px;
+        
+        font-size: 14px;
+        font-family: 'segoe UI';
+        font-weight: lighter;
+        
+        color: black;
+        }
+        
+        
+        #refarebox p span{
+        margin: auto ;
+        padding: 2px;
+        
+        font-size: 14px;
+        font-family: 'segoe UI';
+        font-weight: lighter;
+        cursor: pointer;
+        color: blue;
+}
+
+}
+
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+
+ 
+    #redister{
+        margin: 0px;
+        padding: 5px; 
+        }
+        
+        #redister form{
+        margin: 30px auto ;
+        padding: 30px 15px;
+        
+        width: 28vw;
+        height: auto;
+        
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        
+        border-radius: 5px;
+        box-shadow:  1px 1px 4px 2px rgba(173, 168, 168, 0.222);
+        }
+
+        #formlabel{
+            margin: 0px 10px 20px ;
+            padding: 2px;
+        
+            font-size: 20px;
+            font-weight: lighter;
+            font-family: 'segoe UI';
+        }
+        
+        
+        #redister form input{
+        margin: 10px auto;
+        padding: 10px;
+        
+        width: 85%;
+        height: 30px;
+        
+        font-size: 14px;
+        font-family: 'segoe UI';
+        font-weight: lighter;
+        color: rgb(38, 35, 35);
+        
+        outline:none;
+        
+        border: solid 1px rgb(221, 223, 229);
+        border-radius:5px;
+        }
+        
+        
+        #redister form #btn{
+        margin: 10px auto;
+        padding: 10px 20px;
+        
+        width: 90%;
+        height: auto;
+        
+        font-size: 16px;
+        font-family: 'segoe UI';
+        font-weight: lighter;
+        color: white;
+        text-align: center;
+        outline:none;
+        
+        border: solid 1px rgb(221, 223, 229);
+        border-radius:4px;
+        background-color: red;
+        
+        }
+        
+        #redister form #btn:hover{
+        
+        background-color: rgb(202, 8, 8);
+        
+        }
+        
+        
+        #warn{
+        margin: 0px  auto;
+        padding: 0px ;
+        
+        font-size: 12px;
+        font-family: 'segoe UI';
+        /* font-weight: lighter; */
+        color: red;
+        text-align: center;
+        
+        }
+        #refarebox{
+        margin: 35px auto 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        }
+        #refarebox p{
+        margin: auto ;
+        padding: 2px;
+        
+        font-size: 14px;
+        font-family: 'segoe UI';
+        font-weight: lighter;
+        
+        color: black;
+        }
+        
+        
+        #refarebox p span{
+        margin: auto ;
+        padding: 2px;
+        
+        font-size: 14px;
+        font-family: 'segoe UI';
+        font-weight: lighter;
+        cursor: pointer;
+        color: blue;
+}
+
+}

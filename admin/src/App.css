@@ -1,0 +1,44 @@
+.App {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar:hover {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 60px;
+    box-shadow: inset 0 0 10px rgba(161, 160, 163, 0.404);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px rgb(40, 150, 253);
+}
+
+/*
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 1.6s linear;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
