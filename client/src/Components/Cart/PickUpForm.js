@@ -100,7 +100,7 @@ const PickUpForm = () => {
 
     let selectPickUpLocation;
 
-    if (selectedState == "lagos") {
+    if (selectedState === "lagos") {
         selectPickUpLocation = [
             {
                 value: "ikeja computer village",
@@ -111,7 +111,7 @@ const PickUpForm = () => {
                 label: "Ikeja Allen Avenue : 3, Adefolu Dr Allen Avenue Ikeja ",
             },
         ];
-    } else if (selectedState == "oyo") {
+    } else if (selectedState === "oyo") {
         selectPickUpLocation = [
             {
                 value: "UNI Ibadan",
@@ -122,7 +122,7 @@ const PickUpForm = () => {
                 label: "Bodija Address",
             },
         ];
-    } else if (selectedState == "ogun") {
+    } else if (selectedState === "ogun") {
         selectPickUpLocation = [
             {
                 value: "AbeOkuta",
@@ -151,7 +151,12 @@ const PickUpForm = () => {
                 <li> Name : {userinfo.username} </li>
                 <li>Email Address: {userinfo.email}</li>
                 <li>Phone: {userinfo.phone}</li>
-                {cartSum && <li>Total: NGN {cartSum}</li>}
+                {cartSum && (
+                    <li>
+                        Total: NGN
+                        {cartSum.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+                    </li>
+                )}
             </div>
 
             <Select

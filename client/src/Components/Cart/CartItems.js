@@ -32,7 +32,10 @@ const CartItems = () => {
                     <div className="itemdetails">
                         <h3 className="productname">{i.title}</h3>
                         <p className="productprice">
-                            Unite Price: <span>NGN</span> {i.price}
+                            Unite Price: <span>NGN</span>
+                            {i.price
+                                .toFixed(2)
+                                .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
                         </p>
 
                         <h3 className="quantity">
@@ -57,7 +60,9 @@ const CartItems = () => {
 
                         <p className="productprice">
                             Sum: <span>NGN</span>
-                            {i.quantity * i.price}
+                            {(i.quantity * i.price)
+                                .toFixed(2)
+                                .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
                         </p>
                     </div>
                     <button
@@ -75,7 +80,11 @@ const CartItems = () => {
             {cartSum && (
                 <h3 id="sumtotal">
                     Total: <span id="naira">NGN </span>
-                    <span id="sumtotalunit">{cartSum.total}</span>
+                    <span id="sumtotalunit">
+                        {cartSum.total
+                            .toFixed(2)
+                            .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+                    </span>
                 </h3>
             )}
             <br />

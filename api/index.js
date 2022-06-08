@@ -6,7 +6,7 @@ const authRouter = require("./routes/auth");
 const productsRouter = require("./routes/products");
 const CartRouter = require("./routes/Cart");
 const OrderRouter = require("./routes/Order");
-const PayStack = require("./routes/PayStack");
+// const PayStack = require("./routes/PayStack");
 
 const cors = require("cors");
 
@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 mongoose.connect(process.env.DB_URL).then(() => console.log("db is connected"));
 
-app.use("/payment", PayStack);
+// app.use("/payment", PayStack);
 app.use("/auth", authRouter);
 app.use("/user", userRouter);
 app.use("/products", productsRouter);

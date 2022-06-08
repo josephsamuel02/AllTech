@@ -3,7 +3,8 @@ import "./Register.css";
 import { useFormik } from "formik";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { MdCheckCircleOutline, MdVisibility } from "react-icons/md";
+import Spinner from "react-spinner-material";
 import * as Yup from "yup";
 import { RegisterUser } from "../../store/actions/User";
 const Register = () => {
@@ -12,7 +13,7 @@ const Register = () => {
     const dispatch = useDispatch();
 
     const [invUser, setInvUser] = useState(false);
-
+    const [passwordShown, setPasswordShown] = useState(false);
     const [pass, setConfirmpass] = useState();
     const formik = useFormik({
         initialValues: {
@@ -44,27 +45,26 @@ const Register = () => {
             };
             if (pass === formik.password) {
                 dispatch(RegisterUser(newUser));
-
-                if ((USER.status = 500)) {
-                    setTimeout(() => {
-                        setInvUser(true);
-                        console.log(USER.status);
-                    }, 500);
+                if (USER.status == 401) {
+                    setInvUser(true);
                 } else {
+                    setInvUser("successful");
                     setTimeout(() => {
                         window.location.href = "/login";
-                        console.log("Processing");
-                    }, 500);
+                    }, 3000);
                 }
             }
         },
     });
 
+    const togglePassword = () => {
+        setPasswordShown(!passwordShown);
+    };
+
     return (
         <div id="redister">
             <form onSubmit={formik.handleSubmit}>
                 <h4 id="formlabel">Sign Up</h4>
-
                 <input
                     type="text"
                     id="name"
@@ -76,7 +76,6 @@ const Register = () => {
                 {formik.touched.name && formik.errors.name ? (
                     <p id="warn">{formik.errors.name}</p>
                 ) : null}
-
                 <input
                     type="text"
                     id="email"
@@ -88,7 +87,6 @@ const Register = () => {
                 {formik.touched.email && formik.errors.email ? (
                     <p id="warn">{formik.errors.email}</p>
                 ) : null}
-
                 <input
                     type="number"
                     id="phone"
@@ -100,7 +98,6 @@ const Register = () => {
                 {formik.touched.phone && formik.errors.phone ? (
                     <p id="warn">{formik.errors.phone}</p>
                 ) : null}
-
                 <input
                     type="password"
                     id="password"
@@ -112,22 +109,58 @@ const Register = () => {
                 {formik.touched.password && formik.errors.password ? (
                     <p id="warn">{formik.errors.password}</p>
                 ) : null}
-                <input
-                    type="text"
-                    id="confirmpassword"
-                    placeholder="confirm password"
-                    onChange={(e) => setConfirmpass(e.target.value)}
-                />
-                <input type="submit" value="Sign Up" id="btn" />
 
+                <div id="passbox">
+                    <input
+                        id="confirmpassword"
+                        placeholder="confirm password"
+                        type={passwordShown ? "text" : "password"}
+                        onChange={(e) => setConfirmpass(e.target.value)}
+                    />
+                    <span onClick={togglePassword}>
+                        <MdVisibility size={17} color="silver" />
+                    </span>
+                </div>
+                <input type="submit" value="Sign Up" id="btn" />
                 {RegisterUserState ===
                     "user already exist, use another info" && (
                     <p id="warn">User already exist</p>
                 )}
-                {invUser && (
-                    <p id="warn"> username, email or phone number is in use </p>
-                )}
+                {invUser === true && <p id="warn"> *user email is in use </p>}
+                {invUser === "successful" && (
+                    <>
+                        <p
+                            id="warn"
+                            style={{
+                                color: "rgb(9, 189, 21)",
+                                fontSize: "15px",
+                            }}
+                        >
+                            <MdCheckCircleOutline
+                                color="rgb(9, 189, 21)"
+                                size={14}
+                            />
 
+                            <span style={{ padding: "5px" }}>
+                                Registration is Successful.
+                            </span>
+                        </p>
+                        <span
+                            style={{
+                                margin: "auto",
+                                padding: "5px",
+                                textAlign: "center",
+                            }}
+                        >
+                            <Spinner
+                                radius={17}
+                                color={"#9babefbe"}
+                                stroke={3}
+                                visible={true}
+                            />
+                        </span>
+                    </>
+                )}
                 <div id="refarebox">
                     <p>
                         Already have an account ?

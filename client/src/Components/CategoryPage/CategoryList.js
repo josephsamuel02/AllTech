@@ -109,7 +109,13 @@ const CategoryList = () => {
                                           exercising the gums
                                       </h2>
                                       <p>
-                                          <span>NGN</span> {item.price}
+                                          <span>NGN</span>
+                                          {item.price
+                                              .toFixed(2)
+                                              .replace(
+                                                  /\d(?=(\d{3})+\.)/g,
+                                                  "$&,"
+                                              )}
                                       </p>
                                   </div>
                               </Link>
@@ -154,8 +160,8 @@ const CategoryList = () => {
                           </div>
                       ))
                     : null}
-
                 <HomePostersSlide />
+
                 {theProducts
                     ? theProducts.map((item) => (
                           <div className="categoryCard" key={item._id}>
@@ -167,7 +173,13 @@ const CategoryList = () => {
                                           exercising the gums
                                       </h2>
                                       <p>
-                                          <span>NGN</span> {item.price}
+                                          <span>NGN</span>
+                                          {item.price
+                                              .toFixed(2)
+                                              .replace(
+                                                  /\d(?=(\d{3})+\.)/g,
+                                                  "$&,"
+                                              )}
                                       </p>
                                   </div>
                               </Link>

@@ -234,10 +234,10 @@ padding: 0px;
 }
 
 .cartCard {
-margin: 20px 10px;
+margin: 20px 30px;
 padding: 0px;
 
-width: 95%;
+width: 65%;
 height: 140px;
 
 display: flex;
@@ -457,10 +457,10 @@ padding: 0px;
 }
 
 .cartCard {
-margin: 20px 10px;
+margin: 24px 20px;
 padding: 0px;
 
-width: 95%;
+width: 45%;
 height: 140px;
 
 display: flex;

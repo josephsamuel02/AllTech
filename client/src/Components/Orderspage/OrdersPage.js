@@ -1,7 +1,7 @@
 import "./Orderspage.css";
 
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { GetOrders } from "../../store/actions/Order";
 
@@ -25,23 +25,41 @@ const Orderspage = () => {
                                         <img src={i.image} image alt="" />
                                         <div className="itemdetail">
                                             <p>Item: {i.title}</p>
-                                            <p>Price: NGN {i.price}</p>
+                                            <p>
+                                                Price:
+                                                <span
+                                                    style={{
+                                                        color: "green",
+                                                        paddingLeft: " 4px",
+                                                    }}
+                                                >
+                                                    NGN
+                                                </span>
+                                                {i.price
+                                                    .toFixed(2)
+                                                    .replace(
+                                                        /\d(?=(\d{3})+\.)/g,
+                                                        "$&,"
+                                                    )}
+                                            </p>
                                             <p>Quantity: {i.quantity}</p>
                                         </div>
                                     </div>
                                 ))}
                             </div>
                             <h6>
-                                <span>Total </span>: NGN {item.amount}
+                                <span>Total </span>: NGN
+                                {item.amount
+                                    .toFixed(2)
+                                    .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
                             </h6>
 
                             <h4>Delevery information</h4>
                             <h6>
-                                <span>Receiver </span>:{" "}
-                                {item.receiversInfo.name}
+                                <span>Receiver </span>:{item.receiversInfo.name}
                             </h6>
                             <h6>
-                                <span>Delevery Address </span>:{" "}
+                                <span>Delevery Address </span>:
                                 {item.receiversInfo.deleveryAddress}
                             </h6>
                             <h6>

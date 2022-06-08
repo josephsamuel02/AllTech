@@ -43,15 +43,18 @@ const Nav2 = () => {
     };
 
     const selectValues = [
-        { value: "computers", label: "Computers" },
-        { value: "laptops", label: "Laptops" },
+        { value: "computer", label: "Computers" },
+        { value: "laptop", label: "Laptops" },
         { value: "accesories", label: "Accesories" },
         { value: "officetech", label: "Office Tech" },
-        { value: "smartphones", label: "Smart Phones" },
-        { value: "gameconsoles", label: "game Consoles" },
+        { value: "phone", label: "Smart Phones" },
+        { value: "battry", label: "Battries" },
+        { value: "cctv", label: "CCTV" },
+        { value: "gameconsoles", label: "Game Consoles" },
     ];
     const selectedValue = (value) => {
-        console.log(value);
+        let itemList = value.value;
+        window.location.replace(`/categoryList?category=${itemList}`);
     };
     return (
         <div className="nav2">

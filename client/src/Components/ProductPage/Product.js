@@ -53,7 +53,10 @@ const Product = () => {
                             <p>{theProducts.desc}</p>
                         </div>
                         <h5 className="price">
-                            <span>NGN</span> {theProducts.price}
+                            <span>NGN</span>
+                            {theProducts.price
+                                .toFixed(2)
+                                .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
                         </h5>
                         {userId && (
                             <div className="quantity">

@@ -104,11 +104,16 @@ const HomeDeleveryForm = () => {
     return (
         <div id="homedeleveryform">
             <div id="deleveryinfo">
-                <h2>Delevery Details</h2>
+                <h2>Delivery Details</h2>
                 <li> Name : {userinfo.username} </li>
                 <li>Email Address: {userinfo.email}</li>
                 <li>Phone: {userinfo.phone}</li>
-                {cartSum && <li>Total: NGN {cartSum}</li>}
+                {cartSum && (
+                    <li>
+                        Total: NGN
+                        {cartSum.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+                    </li>
+                )}
             </div>
             <h4>Delevery address</h4>
 

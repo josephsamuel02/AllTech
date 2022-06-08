@@ -26,7 +26,7 @@ const Login = () => {
         );
         dispatch(LogIn(userInfo));
 
-        if (USER.message) {
+        if (USER.status === 401) {
             setTimeout(() => {
                 setInvUser(true);
             }, 500);
@@ -43,7 +43,7 @@ const Login = () => {
 
                 <input
                     type="text"
-                    placeholder="e-mail or phone"
+                    placeholder="Email"
                     onChange={(e) => setUser(e.target.value)}
                 />
 
@@ -52,17 +52,29 @@ const Login = () => {
                     placeholder="password"
                     onChange={(e) => setPassword(e.target.value)}
                 />
+
                 <p
                     id="warn"
-                    style={{ visibility: invUser ? "visible" : "hidden" }}
+                    style={{
+                        visibility: invUser === true ? "visible" : "hidden",
+                    }}
                 >
-                    * Incorrect username or password
+                    * Incorrect email or password
                 </p>
 
-                <button id="loginbtn" type="submit" onClick={handleSubmit}>
-                    Login
-                </button>
-
+                {!password ? (
+                    <button
+                        id="loginbtn"
+                        style={{ backgroundColor: "rgba(217, 52, 77, 0.358)" }}
+                        onClick={(e) => e.preventDefault()}
+                    >
+                        Login
+                    </button>
+                ) : (
+                    <button id="loginbtn" type="submit" onClick={handleSubmit}>
+                        Login
+                    </button>
+                )}
                 <div id="refarebox">
                     <p>
                         Don't have an account ?

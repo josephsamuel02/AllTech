@@ -48,7 +48,9 @@ const HomePageProducts = () => {
                                   <span>more..</span>
                                   <p className="pprice">
                                       <span>NGN </span>
-                                      {item.price}
+                                      {item.price
+                                          .toFixed(2)
+                                          .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
                                   </p>
                               </div>
                           </Link>
