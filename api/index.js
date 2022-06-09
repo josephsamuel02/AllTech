@@ -6,6 +6,7 @@ const authRouter = require("./routes/auth");
 const productsRouter = require("./routes/products");
 const CartRouter = require("./routes/Cart");
 const OrderRouter = require("./routes/Order");
+const SearchRouter = require("./routes/Search");
 // const PayStack = require("./routes/PayStack");
 
 const cors = require("cors");
@@ -22,6 +23,7 @@ app.use("/user", userRouter);
 app.use("/products", productsRouter);
 app.use("/cart", CartRouter);
 app.use("/order", OrderRouter);
+app.use("/search", SearchRouter);
 
 app.get("/", (req, res) => {
     res.send("hellow Coder!");

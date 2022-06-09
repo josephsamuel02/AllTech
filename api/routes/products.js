@@ -48,7 +48,7 @@ router.delete("/:id", verifyTokenAndAdmin, async (req, res) => {
     }
 });
 
-// GET PRODUCT
+// GET A SINGLE PRODUCT
 router.get("/:id", async (req, res) => {
     try {
         const product = await Product.findById(req.params.id);
@@ -76,8 +76,13 @@ router.get("/", async (req, res) => {
         qSort == "lowestPrice" ? (sortBy = { price: 1 }) : null;
 
         if (qCategory && qSort) {
+            //added the title
+            //but not tested yet
             products = await Product.find({
                 category: {
+                    $in: [qCategory],
+                },
+                title: {
                     $in: [qCategory],
                 },
             })
@@ -98,7 +103,6 @@ router.get("/", async (req, res) => {
         } else {
             products = await Product.find();
         }
-
         res.status(200).json(products);
     } catch (err) {
         res.status(500).json(err);

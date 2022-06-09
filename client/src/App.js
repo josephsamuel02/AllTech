@@ -11,6 +11,7 @@ import { useSelector } from "react-redux";
 import Nav from "./Components/Nav/Nav";
 import Home from "./Components/HomePage/Home";
 import CategoryList from "./Components/CategoryPage/CategoryList";
+import SearchedProducts from "./Components/SearchedProducts/SearchedProducts";
 import Product from "./Components/ProductPage/Product";
 import Cart from "./Components/Cart/Cart";
 import Register from "./Components/Register/Register";
@@ -51,6 +52,11 @@ const App = () => {
                     <Route path="/product/:id" element={<Product />} />
 
                     <Route path="/categoryList" element={<CategoryList />} />
+
+                    <Route
+                        path="/searchresult"
+                        element={<SearchedProducts />}
+                    />
 
                     <Route path="/" element={<Home />} />
                 </Routes>

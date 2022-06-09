@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import "./Nav2.css";
-import { MdSearch, MdMenu } from "react-icons/md";
+import { MdSearch, MdMenu, MdClose } from "react-icons/md";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import Select from "react-select";
 import { useSelector, useDispatch } from "react-redux";
 import { GetCart } from "../../store/actions/Cart";
+import { Search } from "../../store/actions/Search";
 import SideNav from "../SidNav/SideNav";
 
 const Nav2 = () => {
     const userId = useSelector((state) => state.LogIn._id);
+    const searchsugestions = useSelector((state) => state.Search);
     const dispatch = useDispatch();
     useEffect(() => userId && dispatch(GetCart(userId)), [dispatch]);
 
     const [togleNav, setTogleNav] = useState(false);
+    const [querytext, setQueryText] = useState(null);
 
     const customStyles = {
         option: (provided, state) => ({
@@ -42,60 +46,93 @@ const Nav2 = () => {
         },
     };
 
+    const queryFunction = (e) => {
+        setQueryText(e.target.value);
+        if (e.target.value) {
+            dispatch(Search(e.target.value));
+        }
+    };
+
+    const searchFunction = () => {
+        if (querytext) {
+            dispatch(Search(querytext));
+            window.location.replace(`/searchresult?search=${querytext}`);
+        }
+    };
+
     const selectValues = [
         { value: "computer", label: "Computers" },
         { value: "laptop", label: "Laptops" },
-        { value: "accesories", label: "Accesories" },
+        { value: "accesory", label: "Accesories" },
         { value: "officetech", label: "Office Tech" },
         { value: "phone", label: "Smart Phones" },
-        { value: "battry", label: "Battries" },
+        { value: "battery", label: "Battries" },
         { value: "cctv", label: "CCTV" },
-        { value: "gameconsoles", label: "Game Consoles" },
+        { value: "gameconsole", label: "Game Consoles" },
     ];
     const selectedValue = (value) => {
         let itemList = value.value;
         window.location.replace(`/categoryList?category=${itemList}`);
     };
+
     return (
-        <div className="nav2">
-            <IconContext.Provider
-                value={{
-                    color: "red",
-                    size: "24px",
-                }}
-            >
-                <div className="search">
-                    <input
-                        type="text"
-                        className="searchInput"
-                        placeholder="search"
-                    />
+        <>
+            <div className="nav2">
+                <IconContext.Provider
+                    value={{
+                        color: "red",
+                        size: "24px",
+                    }}
+                >
+                    <div className="search">
+                        <input
+                            type="text"
+                            className="searchInput"
+                            placeholder="search"
+                            onChange={(e) => queryFunction(e)}
+                        />
 
-                    <button className="searchBtn">
-                        <MdSearch color="white" size="22px" />
-                    </button>
-                </div>
-                <div className="ctegorylist">
-                    <Select
-                        className="select"
-                        styles={customStyles}
-                        options={selectValues}
-                        placeholder={"Categories"}
-                        onChange={selectedValue}
-                    />
+                        <button className="searchBtn" onClick={searchFunction}>
+                            <MdSearch color="white" size="22px" />
+                        </button>
+                    </div>
+                    <div className="ctegorylist">
+                        <Select
+                            className="select"
+                            styles={customStyles}
+                            options={selectValues}
+                            placeholder={"Categories"}
+                            onChange={(e) => selectedValue(e)}
+                        />
 
-                    <h3
-                        id="menuicon"
-                        onClick={() =>
-                            togleNav ? setTogleNav(false) : setTogleNav(true)
-                        }
-                    >
-                        <MdMenu color="rgb(102, 100, 100)" size="22px" />
+                        <h3
+                            id="menuicon"
+                            onClick={() =>
+                                togleNav
+                                    ? setTogleNav(false)
+                                    : setTogleNav(true)
+                            }
+                        >
+                            <MdMenu color="rgb(102, 100, 100)" size="22px" />
+                        </h3>
+                    </div>
+                </IconContext.Provider>
+                <SideNav togle={{ togleNav, setTogleNav }} />
+            </div>
+            {querytext && (
+                <div id="searchsugestions">
+                    <h3>
+                        <MdClose size={20} color="silver" />
                     </h3>
+                    {searchsugestions &&
+                        searchsugestions.map((item) => (
+                            <Link to={`/searchresult?search=${item.title}`}>
+                                <p key={item._id}>{item.title}</p>
+                            </Link>
+                        ))}
                 </div>
-            </IconContext.Provider>
-            <SideNav togle={{ togleNav, setTogleNav }} />
-        </div>
+            )}
+        </>
     );
 };
 

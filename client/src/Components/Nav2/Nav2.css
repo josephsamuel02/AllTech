@@ -106,6 +106,51 @@ padding: 0px;
 /* background-color: rgb(102, 100, 100); */
 }
 
+
+#searchsugestions{
+margin:  1px ;
+padding: 3px 4px; 
+position: relative;
+position: fixed;
+top: 113px;
+left: 5px;
+height: auto;
+width: 170px;
+
+background-color: rgba(255, 255, 255, 0.325);
+backdrop-filter: blur(5px);
+z-index: 5;
+
+}
+
+
+#searchsugestions p{
+margin:  1px ;
+padding: 3px 4px; 
+
+
+font-size: 12px;
+/* font-weight: lighter; */
+font-family: 'Segoe UI';
+color: black;
+border-bottom: solid 1px rgb(219, 219, 225);
+
+overflow: hidden;
+cursor: pointer;
+}
+
+
+#searchsugestions h3{
+margin: auto;
+padding: 1px; 
+float: right;
+}
+
+
+#searchsugestions p:hover{
+background-color: rgba(233, 111, 111, 0.216);
+}
+
 }
 
 /* for tablet view */
@@ -204,9 +249,6 @@ outline: none;
 }
 
 
-
-
-
 #menuicon{
 margin: auto  ;
 margin-left: 100px;
@@ -215,11 +257,59 @@ padding: 0px;
 
 }
 
+
+#searchsugestions{
+margin:  1px ;
+padding: 3px 4px; 
+position: relative;
+position: fixed;
+top: 113px;
+left: 5px;
+height: auto;
+width: 170px;
+
+background-color: rgba(255, 255, 255, 0.325);
+backdrop-filter: blur(5px);
+z-index: 5;
+
+}
+
+
+
+#searchsugestions p{
+margin: 3px 1px ;
+padding: 3px 4px; 
+
+
+font-size: 14px;
+/* font-weight: lighter; */
+font-family: 'Segoe UI';
+color: black;
+border-bottom: solid 1px black;
+
+overflow: hidden;
+cursor: pointer;
+}
+
+
+#searchsugestions h3{
+margin: auto;
+padding: 1px; 
+float: right;
+}
+
+
+#searchsugestions p:hover{
+background-color: rgba(250, 133, 133, 0.216);
+}
+
+
+
 }
 
 /* Desktop styling */
 @media (min-width: 1020px) {
-    
+
 a {
 text-decoration: none;
 }
@@ -317,5 +407,50 @@ margin-left: 100px;
 margin-right: 10px;
 padding: 0px;
 
+}
+
+
+#searchsugestions{
+margin:  1px ;
+padding: 3px 4px; 
+position: relative;
+position: fixed;
+top: 113px;
+left: 5px;
+height: auto;
+width: 170px;
+
+
+background-color: rgba(255, 255, 255, 0.325);
+backdrop-filter: blur(5px);
+z-index: 5;
+
+}
+
+#searchsugestions p{
+margin: 4px 1px ;
+padding: 4px 4px; 
+
+
+font-size: 16px;
+/* font-weight: lighter; */
+font-family: 'Segoe UI';
+color: black;
+border-bottom: solid 1px rgb(219, 219, 225);
+
+overflow: hidden;
+cursor: pointer;
+}
+
+
+#searchsugestions h3{
+margin: auto;
+padding: 1px; 
+float: right;
+}
+
+
+#searchsugestions p:hover{
+background-color: rgba(250, 133, 133, 0.216);
 }
 }

@@ -55,8 +55,10 @@ const Product = () => {
                         <h5 className="price">
                             <span>NGN</span>
                             {theProducts.price
-                                .toFixed(2)
-                                .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
+                                ? theProducts.price
+                                      .toFixed(2)
+                                      .replace(/\d(?=(\d{3})+\.)/g, "$&,")
+                                : null}
                         </h5>
                         {userId && (
                             <div className="quantity">

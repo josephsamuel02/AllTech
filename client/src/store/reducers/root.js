@@ -2,6 +2,7 @@ import { combineReducers } from "redux";
 import { Products } from "./Products";
 import { SingleProduct } from "./SingleProduct";
 import { HomeProducts } from "./HomeProducts";
+
 import {
     AddToCart,
     GetCart,
@@ -11,8 +12,8 @@ import {
 } from "./Cart";
 import { LogIn, RegisterUser } from "./User";
 import { VerifyPayment } from "./Paystack";
-
 import { SendOrder, GetOrders } from "./Order";
+import { Search } from "./Search";
 
 export const rootReducer = combineReducers({
     Products,
@@ -28,4 +29,5 @@ export const rootReducer = combineReducers({
     VerifyPayment,
     SendOrder,
     GetOrders,
+    Search,
 });

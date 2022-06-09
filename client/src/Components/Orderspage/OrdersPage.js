@@ -15,7 +15,7 @@ const Orderspage = () => {
     return (
         <div id="orderspage">
             <div id="orderslistbox">
-                {Orders &&
+                {!Orders.message &&
                     Orders.map((item) => (
                         <div className="orderslist" key={item._id}>
                             <h4 className="date">{item.createdAt}</h4>
@@ -68,7 +68,9 @@ const Orderspage = () => {
                         </div>
                     ))}
             </div>
-
+            {Orders.message && (
+                <h1 style={{ textAlign: "center" }}>No Order history</h1>
+            )}
             <Link to={"/cart"}>
                 <button id="cartbtn">Go to Cart</button>
             </Link>
