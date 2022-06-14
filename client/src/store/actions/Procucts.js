@@ -35,3 +35,34 @@ export const Products = (
 
     // payload: productsItem,
 });
+
+//DECREMENT PRODUCTS INSTOCK
+
+const decrementproducts = async (IDs) => {
+    try {
+        const response = await axios.patch(
+            `http://localhost:8000/products/instock`,
+
+            IDs,
+            {
+                headers: {
+                    token: `Bearer ${
+                        JSON.parse(
+                            JSON.parse(localStorage.getItem("persist:root"))
+                                .LogIn
+                        ).accesstoken
+                    }`,
+                },
+            }
+        );
+
+        return response.data;
+    } catch (err) {
+        throw err;
+    }
+};
+
+export const DecrementProducts = (IDs) => ({
+    type: "DECREMENT_PRODUCTS",
+    payload: decrementproducts(IDs),
+});

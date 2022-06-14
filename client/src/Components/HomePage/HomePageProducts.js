@@ -45,7 +45,7 @@ const HomePageProducts = () => {
                               <img src={item.image} alt="" />
                               <div className="detail">
                                   <h5 className="pname">{item.title}</h5>
-                                  <span>more..</span>
+                                  <span>more detail..</span>
                                   <p className="pprice">
                                       <span>NGN </span>
                                       {item.price
@@ -55,19 +55,33 @@ const HomePageProducts = () => {
                               </div>
                           </Link>
                           {userId && (
-                              <button
-                                  onClick={() =>
-                                      addtocart(
-                                          item._id,
-                                          item.title,
-                                          item.image,
-                                          item.price,
-                                          1
-                                      )
-                                  }
-                              >
-                                  ADD TO CART
-                              </button>
+                              <>
+                                  {item.inStock <= 0 ? (
+                                      <button
+                                          style={{
+                                              backgroundColor: "white",
+                                              color: "red",
+                                              border: "solid 1px red",
+                                          }}
+                                      >
+                                          Out of Stock
+                                      </button>
+                                  ) : (
+                                      <button
+                                          onClick={() =>
+                                              addtocart(
+                                                  item._id,
+                                                  item.title,
+                                                  item.image,
+                                                  item.price,
+                                                  1
+                                              )
+                                          }
+                                      >
+                                          ADD TO CART
+                                      </button>
+                                  )}
+                              </>
                           )}
                       </div>
                   ))

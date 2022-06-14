@@ -10,7 +10,6 @@ const addtocart = async (product) => {
         const response = await axios.post(
             "http://localhost:8000/cart",
             product,
-
             {
                 headers: {
                     token: `Bearer ${
@@ -132,4 +131,33 @@ const deletecart = async (id) => {
 export const DeleteCart = (id) => ({
     type: "DELETE_CART",
     payload: deletecart(id),
+});
+
+//DELETE/CLEAR USER'S CART ITEMS
+
+const deleteallcart = async (userId) => {
+    try {
+        const response = await axios.delete(
+            `http://localhost:8000/cart/clearcart/${userId}`,
+            {
+                headers: {
+                    token: `Bearer ${
+                        JSON.parse(
+                            JSON.parse(localStorage.getItem("persist:root"))
+                                .LogIn
+                        ).accesstoken
+                    }`,
+                },
+            }
+        );
+
+        return response.data;
+    } catch (err) {
+        throw err;
+    }
+};
+
+export const DeleteAllCart = (userId) => ({
+    type: "DELETE_ALL_CART",
+    payload: deleteallcart(userId),
 });

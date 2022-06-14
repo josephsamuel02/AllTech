@@ -38,7 +38,7 @@ a {
         margin: 0px;
         padding: 0px;
 
-        width: 82px;
+        width: 87px;
         height: 120px;
 
         object-fit: cover;
@@ -51,12 +51,12 @@ a {
         margin: 0px;
         padding: auto;
 
-        font-size: 9px;
-        font-family: sans-serif;
-        font-weight: lighter;
+        font-size: 11px;
+        font-family: 'Segoe UI';
+        /* font-weight: lighter; */
         height: 18px;
         text-align: center;
-        color: rgba(0, 0, 0, 0.842);
+        color: rgba(0, 0, 0, 0.93);
     }
 
 
@@ -100,8 +100,8 @@ a {
         margin: 0px;
         padding: 0px;
 
-        width: 120px;
-        height: 150px;
+        width: 165px;
+        height: 180px;
 
         object-fit: cover;
         object-position: center;
@@ -118,7 +118,7 @@ a {
         /* font-weight: lighter; */
         height: auto;
         text-align: center;
-        color: rgba(0, 0, 0, 0.842);
+        color: rgba(0, 0, 0, 0.939);
     }
 
 
@@ -159,8 +159,8 @@ a {
         margin: 0px;
         padding: 0px;
 
-        width: 150px;
-        height: 170px;
+        width: 200px;
+        height: 187px;
 
         object-fit: cover;
         object-position: center;
@@ -177,7 +177,7 @@ a {
         /* font-weight: lighter; */
         height: 18px;
         text-align: center;
-        color: rgba(0, 0, 0, 0.842);
+        color: rgb(0, 0, 0);
     }
 
 

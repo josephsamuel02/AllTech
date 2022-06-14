@@ -28,8 +28,6 @@ const Home = () => {
 
             <HomePageProducts />
             <HomePostersSlide2 />
-
-            <HomePageProducts />
         </div>
     );
 };

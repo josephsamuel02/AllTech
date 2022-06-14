@@ -121,7 +121,7 @@ const Nav2 = () => {
             </div>
             {querytext && (
                 <div id="searchsugestions">
-                    <h3>
+                    <h3 onClick={() => setQueryText(null)}>
                         <MdClose size={20} color="silver" />
                     </h3>
                     {searchsugestions &&

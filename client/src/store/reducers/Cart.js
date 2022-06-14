@@ -47,3 +47,13 @@ export const DeleteCart = (state = [], action) => {
             return state;
     }
 };
+
+export const DeleteAllCart = (state = [], action) => {
+    switch (action.type) {
+        case "DELETE_ALL_CART":
+            return action.payload;
+
+        default:
+            return state;
+    }
+};

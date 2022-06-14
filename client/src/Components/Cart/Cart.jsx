@@ -9,6 +9,7 @@ import PickUpForm from "./PickUpForm";
 
 const Cart = () => {
     const userId = useSelector((state) => state.LogIn._id);
+    const Cart = useSelector((state) => state.GetCart);
     const dispatch = useDispatch();
     const [displayOrder, setDisplayOrder] = useState(false);
     const [displayOrderForm, setDisplayOrderForm] = useState(false);
@@ -21,14 +22,16 @@ const Cart = () => {
     return (
         <div id="cartpage">
             <CartItems />
-            <button
-                id="coninuetoorder"
-                onClick={() => {
-                    setDisplayOrder(true);
-                }}
-            >
-                Proceed to Place Order
-            </button>
+            {Cart[0] && (
+                <button
+                    id="coninuetoorder"
+                    onClick={() => {
+                        setDisplayOrder(true);
+                    }}
+                >
+                    Proceed to Place Order
+                </button>
+            )}
             <br /> <br />
             {displayOrder && (
                 <div id="deleverymodebox">

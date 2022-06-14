@@ -68,6 +68,7 @@ font-family: sans-serif;
 font-weight: lighter;
 border-radius: 0px 3px 3px 0px;
 background-color: rgba(251, 61, 61, 0.928);
+cursor: pointer;
 }
 
 .searchBtn:hover { background-color: red;}
@@ -85,8 +86,7 @@ padding:auto;
 font-size: 14px;
 font-family: 'Segoe UI';
 width: 150px;
-height: auto;
-height: 10px;
+height: auto; 
 outline: none;
 
 } 
@@ -168,7 +168,7 @@ top: 70px;
 left: 0px;
 right: 0px;
 max-width: 100%;
-height: 47px;
+height: 57px;
 justify-content: center;
 justify-items: center;
 display: flex;
@@ -181,7 +181,7 @@ z-index: 5;
 
 .search {
 
-margin: 7px auto  ;
+margin: 12px auto  ;
 padding: 3px;
 width: auto;
 position: absolute;
@@ -195,7 +195,7 @@ display: flex;
 margin: 0px;
 padding:3px 10px;
 
-height: 20px;
+height: 25px;
 width: 160px;
 
 
@@ -215,7 +215,7 @@ margin: 0px;
 padding:3px 7px 0px;
 outline: none;
 border: solid 1px rgba(128, 128, 128, 0.354);
-height: 28px;
+height: 34px;
 width: auto;
 text-align: center;
 font-family: sans-serif;
@@ -229,7 +229,7 @@ background-color: rgba(251, 61, 61, 0.928);
 
 
 .nav2 .ctegorylist {
-margin: 0px;
+margin: 8px 0px;
 padding: 0px;
 /* width: 200px; */
 display: flex;

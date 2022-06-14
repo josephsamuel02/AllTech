@@ -1,15 +1,16 @@
 import { combineReducers } from "redux";
-import { Products } from "./Products";
+import { Products, DecrementProducts } from "./Products";
 import { SingleProduct } from "./SingleProduct";
 import { HomeProducts } from "./HomeProducts";
-
 import {
     AddToCart,
     GetCart,
     UpdateCart,
     DeleteCart,
     CartSumTotal,
+    DeleteAllCart,
 } from "./Cart";
+
 import { LogIn, RegisterUser } from "./User";
 import { VerifyPayment } from "./Paystack";
 import { SendOrder, GetOrders } from "./Order";
@@ -30,4 +31,6 @@ export const rootReducer = combineReducers({
     SendOrder,
     GetOrders,
     Search,
+    DeleteAllCart,
+    DecrementProducts,
 });

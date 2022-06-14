@@ -1,6 +1,11 @@
+a{
+    text-decoration: none;
+}
+
+
 /* Mobile view */
 @media (max-width: 543px) {
-    
+   
 #cartpage {
 margin: 15px 0px ;
 padding: 0px;

@@ -4,26 +4,39 @@ import { usePaystackPayment } from "react-paystack";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { VerifyPayment } from "../../store/actions/Paystack";
-import { GetCart } from "../../store/actions/Cart";
+import { GetCart, DeleteAllCart } from "../../store/actions/Cart";
 import { SendOrder } from "../../store/actions/Order";
+import { DecrementProducts } from "../../store/actions/Procucts";
 
 const HomeDeleveryForm = () => {
     const cartItems = useSelector((state) => state.GetCart);
-
     const cartSum = useSelector((state) => state.CartSumTotal[0].total);
     const userId = useSelector((state) => state.LogIn._id);
     const userinfo = useSelector((state) => state.LogIn);
 
     const dispatch = useDispatch();
-
     const [cartSumStr, setCartSumStr] = useState();
     const [warn, setWarn] = useState(false);
     const [state, setState] = useState();
+    const [IDs, setIDs] = useState();
 
     useEffect(() => userId && dispatch(GetCart(userId)), [dispatch]);
 
     const [delvAdd, setDelvAdd] = useState();
 
+    const Test = () => {
+        // setIDs((prev) => [prev, ...cartItems]);
+        // for (let i = 0; i < cartItems.length; i++) {
+        //     setIDs((prev) => [prev, ...cartItems[i].productId]);
+        // }
+        // console.log(IDs);
+        // console.log(cartItems[0].productId);
+        // let i = cartItems.length;
+        // while (i <= cartItems.length) {
+        //     // console.log(cartItems[0].productId);
+        // }
+    };
+    useEffect(() => Test(), []);
     const settotal = () => {
         cartSum &&
             setTimeout(() => {
@@ -47,7 +60,13 @@ const HomeDeleveryForm = () => {
         dispatch(VerifyPayment(reference.reference));
         setTimeout(() => {
             dispatch(SendOrder(orderObject));
-        }, 500);
+        }, 400);
+        setTimeout(() => {
+            dispatch(DeleteAllCart(userId));
+        }, 600);
+        setTimeout(() => {
+            dispatch(DecrementProducts(IDs));
+        }, 800);
         setTimeout(() => {
             window.location.replace("/orders");
         }, 1000);

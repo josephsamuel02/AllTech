@@ -4,12 +4,11 @@ import { usePaystackPayment } from "react-paystack";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { VerifyPayment } from "../../store/actions/Paystack";
-import { GetCart } from "../../store/actions/Cart";
+import { GetCart, DeleteAllCart } from "../../store/actions/Cart";
 import { SendOrder } from "../../store/actions/Order";
 
 const PickUpForm = () => {
     const cartItems = useSelector((state) => state.GetCart);
-
     const cartSum = useSelector((state) => state.CartSumTotal[0].total);
     const userId = useSelector((state) => state.LogIn._id);
     const userinfo = useSelector((state) => state.LogIn);
@@ -46,7 +45,10 @@ const PickUpForm = () => {
         dispatch(VerifyPayment(reference.reference));
         setTimeout(() => {
             dispatch(SendOrder(orderObject));
-        }, 500);
+        }, 400);
+        setTimeout(() => {
+            dispatch(DeleteAllCart(userId));
+        }, 700);
         setTimeout(() => {
             window.location.replace("/orders");
         }, 1000);

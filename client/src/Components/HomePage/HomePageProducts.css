@@ -55,7 +55,7 @@ a {
     padding: 0px;
     height: 40px;
     font-size: 13px;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     font-family: 'segoe UI';
     word-wrap: break-word; 
     color: rgba(0, 0, 0, 0.959);
@@ -126,20 +126,21 @@ border-radius: 2px;
 
     #products {
         margin: 10px 0px;
-        padding: 0px;
+        padding: auto;
         text-decoration: none;
         max-width: 100%;
         height: auto; 
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
     }
     
     #products .productsCard {
-        margin: 20px auto 20px 10px;
+        margin: 20px auto ;
         padding: 0px;
         text-decoration: none;
     
-        max-width: 130px;
+        max-width: 160px;
         height: 270px;
         display: flex;
         flex-wrap: nowrap;
@@ -170,8 +171,7 @@ border-radius: 2px;
         margin: 0px;
         padding: 0px;
         height: 40px;
-        font-size: 13px;
-        font-weight: lighter;
+        font-size: 12px;
         font-family: 'segoe UI';
         word-wrap: break-word; 
         color: rgba(0, 0, 0, 0.959);
@@ -252,14 +252,15 @@ border-radius: 2px;
         height: auto; 
         display: flex;
         flex-wrap: wrap;
+        
     }
     
     #products .productsCard {
-        margin: 20px auto 20px 10px;
+        margin: 20px auto 10px ;
         padding: 0px;
         text-decoration: none;
     
-        max-width: 130px;
+        max-width: 170px;
         height: 270px;
         display: flex;
         flex-wrap: nowrap;
@@ -291,7 +292,7 @@ border-radius: 2px;
         padding: 0px;
         height: 40px;
         font-size: 13px;
-        font-weight: lighter;
+      
         font-family: 'segoe UI';
         word-wrap: break-word; 
         color: rgba(0, 0, 0, 0.959);

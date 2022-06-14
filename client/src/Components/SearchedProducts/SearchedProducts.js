@@ -146,21 +146,33 @@ const SearchedProducts = () => {
                                           </select>
                                       </div>
 
-                                      <button
-                                          onClick={() => {
-                                              addtocart(
-                                                  item._id,
-                                                  item.title,
-                                                  item.image,
-                                                  item.price,
-                                                  quantity
-                                              );
+                                      {item.inStock <= 0 ? (
+                                          <button
+                                              style={{
+                                                  backgroundColor: "white",
+                                                  color: "red",
+                                                  border: "solid 1px red",
+                                              }}
+                                          >
+                                              Out of Stock
+                                          </button>
+                                      ) : (
+                                          <button
+                                              onClick={() => {
+                                                  addtocart(
+                                                      item._id,
+                                                      item.title,
+                                                      item.image,
+                                                      item.price,
+                                                      quantity
+                                                  );
 
-                                              setQuantity(1);
-                                          }}
-                                      >
-                                          Add to cart
-                                      </button>
+                                                  setQuantity(1);
+                                              }}
+                                          >
+                                              Add to cart
+                                          </button>
+                                      )}
                                   </div>
                               )}
                           </div>
@@ -207,22 +219,33 @@ const SearchedProducts = () => {
                                               <option value={10}>10</option>
                                           </select>
                                       </div>
+                                      {item.inStock <= 0 ? (
+                                          <button
+                                              style={{
+                                                  backgroundColor: "white",
+                                                  color: "red",
+                                                  border: "solid 1px red",
+                                              }}
+                                          >
+                                              Out of Stock
+                                          </button>
+                                      ) : (
+                                          <button
+                                              onClick={() => {
+                                                  addtocart(
+                                                      item._id,
+                                                      item.title,
+                                                      item.image,
+                                                      item.price,
+                                                      quantity
+                                                  );
 
-                                      <button
-                                          onClick={() => {
-                                              addtocart(
-                                                  item._id,
-                                                  item.title,
-                                                  item.image,
-                                                  item.price,
-                                                  quantity
-                                              );
-
-                                              setQuantity(1);
-                                          }}
-                                      >
-                                          Add to cart
-                                      </button>
+                                                  setQuantity(1);
+                                              }}
+                                          >
+                                              Add to cart
+                                          </button>
+                                      )}
                                   </div>
                               )}
                           </div>

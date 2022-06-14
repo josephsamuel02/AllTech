@@ -2,48 +2,48 @@
 @media (max-width: 543px) {
 
 #orderspage{
-    margin: 0px;
-    padding:0px  0px; 
-            
+margin: 0px;
+padding:0px  0px; 
+
 }
 
 
- #orderslistbox{
-        margin: 8px 0px;
-        padding: 2px;
-        height: auto;
-        max-width: 100%;
-    
- }
+#orderslistbox{
+margin: 8px 0px;
+padding: 2px;
+height: auto;
+max-width: 100%;
 
- #orderslistbox .orderslist{
-    margin: 5px auto 50px;
-    padding: 10px 5px; 
-    background-color: rgba(148, 5, 5, 0.931);
-    border-radius: 4px;
+}
+
+#orderslistbox .orderslist{
+margin: 5px auto 50px;
+padding: 10px 5px; 
+background-color: rgba(75, 3, 5, 0.944);
+border-radius: 4px;
 }
 
 #orderslistbox .orderslist .date{
-    margin: 5px;
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-    font-weight: lighter;
-    color: white;
- 
+margin: 5px;
+padding: 10px;
+font-size: 16px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
 }
 
 #orderslistbox .orderslist .productinfo{
-    margin:auto ;
-    padding: 5px;
-    max-width: 95%;
-    height: auto;
+margin:auto ;
+padding: 5px;
+max-width: 95%;
+height: auto;
 
-    display: flex;
-    flex-direction: column;
-    border: solid 1px rgba(74, 25, 25, 0.196);
-    border-radius: 5px;
-    background-color: white;
+display: flex;
+flex-direction: column;
+border: solid 1px rgba(74, 25, 25, 0.196);
+border-radius: 5px;
+background-color: white;
 }
 
 .orderslist .productinfo div{
@@ -56,346 +56,345 @@ flex-direction: row;
 
 .orderslist .productinfo div img{
 
-    margin: 0px ;
-    padding: 0px;
- 
-    width: 120px;
-    height: 120px;
-    
- }
- 
- .orderslist .productinfo div .itemdetail{
-        margin: 0px 0px 0px 10px;
-        padding: 4px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
+margin: 0px ;
+padding: 0px;
+
+width: 120px;
+height: 120px;
+
+}
+
+.orderslist .productinfo div .itemdetail{
+margin: 0px 0px 0px 10px;
+padding: 4px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
 }
 
 .productinfo div .itemdetail p{
-        margin: 9px;
-        padding: 1px;
-        font-size: small;
-        font-family: 'Segoe UI';
-        color: black;
+margin: 9px;
+padding: 1px;
+font-size: small;
+font-family: 'Segoe UI';
+color: black;
 }
 
 #orderslistbox .orderslist h6{
-    margin: 5px;
-    padding: 3px;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-    font-weight: lighter;
-    color: white;
- 
+margin: 5px;
+padding: 3px;
+font-size: 16px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
 }
 
 #orderslistbox .orderslist h6 span{
-    margin: 0px;
-    padding: 0px;
-    font-size: 19px;
-    font-family: 'Segoe UI';
-    /* font-weight: bold; */
-    color: white;
- 
+margin: 0px;
+padding: 0px;
+font-size: 19px;
+font-family: 'Segoe UI';
+/* font-weight: bold; */
+color: white;
+
 }
 
 #orderslistbox .orderslist h4{
-    margin: 5px;
-    padding: 3px;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-    color: white;
- 
+margin: 5px;
+padding: 3px;
+font-size: 16px;
+font-family: 'Segoe UI';
+color: white;
+
 }
 
 
 #cartbtn{
-    margin: 10px 20px;
-    padding: 5px 30px 8px;
-    width: auto;
-    
-    font-size: 15px;
-    font-family: 'Segoe UI'; 
-    color: rgb(1, 19, 32);
-    background-color:white;
-    
-    outline: none;
-    border: solid 2px rgb(40, 39, 39);
-    border-radius: 2px;
+margin: 10px 20px;
+padding: 5px 30px 8px;
+width: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI'; 
+color: rgb(1, 19, 32);
+background-color:white;
+
+outline: none;
+border: solid 2px rgb(40, 39, 39);
+border-radius: 2px;
 
 }
 
 }
 
-    
-    /* for tablet view */
-    @media (min-width: 544px) {
-     
+
+/* for tablet view */
+@media (min-width: 544px) {
 
 
-        #orderspage{
-            margin: 0px;
-            padding:0px  0px; 
-                    
-        }
-        
-        
-         #orderslistbox{
-                margin: 8px 0px;
-                padding: 2px;
-                height: auto;
-                max-width: 100%;
-            
-         }
-        
-         #orderslistbox .orderslist{
-            margin: 5px auto 50px;
-            padding: 10px 5px; 
-            background-color: rgba(148, 5, 5, 0.931);
-            border-radius: 4px;
-        }
-        
-        #orderslistbox .orderslist .date{
-            margin: 5px;
-            padding: 10px;
-            font-size: 16px;
-            font-family: 'Segoe UI';
-            font-weight: lighter;
-            color: white;
-         
-        }
-        
-        #orderslistbox .orderslist .productinfo{
-            margin:auto ;
-            padding: 5px;
-            max-width: 85%;
-            height: auto;
-        
-            display: flex;
-            flex-direction: column;
-            border: solid 1px rgba(74, 25, 25, 0.196);
-            border-radius: 5px;
-            background-color: white;
-        }
-        
-        .orderslist .productinfo div{
-        
-        margin:10px 0px 0px;
-        padding: 4px;
-        display: flex;
-        flex-direction: row;
-        }
-        
-        .orderslist .productinfo div img{
-        
-            margin: 0px ;
-            padding: 0px;
-         
-            width: 120px;
-            height: 120px;
-            
-         }
-         
-         .orderslist .productinfo div .itemdetail{
-                margin: 0px 0px 0px 10px;
-                padding: 4px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                justify-items: center;
-        }
-        
-        .productinfo div .itemdetail p{
-                margin: 9px;
-                padding: 1px;
-                font-size: small;
-                font-family: 'Segoe UI';
-                color: black;
-        }
-        
-        #orderslistbox .orderslist h6{
-            margin: 5px;
-            padding: 3px;
-            font-size: 16px;
-            font-family: 'Segoe UI';
-            font-weight: lighter;
-            color: white;
-         
-        }
-        
-        #orderslistbox .orderslist h6 span{
-            margin: 0px;
-            padding: 0px;
-            font-size: 19px;
-            font-family: 'Segoe UI';
-            /* font-weight: bold; */
-            color: white;
-         
-        }
-        
-        #orderslistbox .orderslist h4{
-            margin: 5px;
-            padding: 3px;
-            font-size: 16px;
-            font-family: 'Segoe UI';
-            color: white;
-         
-        }
-        
-        
-        #cartbtn{
-            margin: 10px 20px;
-            padding: 5px 40px 8px;
-            width: auto;
-            
-            font-size: 15px;
-            font-family: 'Segoe UI'; 
-            color: rgb(1, 19, 32);
-            background-color:white;
-            
-            outline: none;
-            border: solid 2px rgb(40, 39, 39);
-            border-radius: 2px;
-        
-        }
-        
-    
-    }
-    
-    /* Desktop styling */
-    @media (min-width: 1020px) {
-     
+
+#orderspage{
+margin: 0px;
+padding:0px  0px; 
+
+}
 
 
-        #orderspage{
-            margin: 0px;
-            padding:0px  0px; 
-                    
-        }
-        
-        
-         #orderslistbox{
-                margin: 8px 0px;
-                padding: 2px;
-                height: auto;
-                max-width: 100%;
-            
-         }
-        
-         #orderslistbox .orderslist{
-            margin: 5px auto 50px;
-            padding: 10px 5px; 
-            background-color: rgba(148, 5, 5, 0.931);
-            border-radius: 4px;
-        }
-        
-        #orderslistbox .orderslist .date{
-            margin: 5px;
-            padding: 10px;
-            font-size: 16px;
-            font-family: 'Segoe UI';
-            font-weight: lighter;
-            color: white;
-         
-        }
-        
-        #orderslistbox .orderslist .productinfo{
-            margin:auto ;
-            padding: 5px;
-            max-width: 65%;
-            height: auto;
-        
-            display: flex;
-            flex-direction: column;
-            border: solid 1px rgba(74, 25, 25, 0.196);
-            border-radius: 2px;
-            background-color: white;
-        }
-        
-        .orderslist .productinfo div{
-        
-        margin:10px 0px 0px;
-        padding: 4px;
-        display: flex;
-        flex-direction: row;
-        }
-        
-        .orderslist .productinfo div img{
-        
-            margin: 0px ;
-            padding: 0px;
-         
-            width: 130px;
-            height: 130px;
-            
-         }
-         
-         .orderslist .productinfo div .itemdetail{
-                margin: 0px 0px 0px 10px;
-                padding: 4px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                justify-items: center;
-        }
-        
-        .productinfo div .itemdetail p{
-                margin: 9px;
-                padding: 1px;
-                font-size: small;
-                font-family: 'Segoe UI';
-                color: black;
-        }
-        
-        #orderslistbox .orderslist h6{
-            margin: 5px;
-            padding: 3px;
-            font-size: 16px;
-            font-family: 'Segoe UI';
-            font-weight: lighter;
-            color: white;
-         
-        }
-        
-        #orderslistbox .orderslist h6 span{
-            margin: 0px;
-            padding: 0px;
-            font-size: 19px;
-            font-family: 'Segoe UI';
-            /* font-weight: bold; */
-            color: white;
-         
-        }
-        
-        #orderslistbox .orderslist h4{
-            margin: 5px;
-            padding: 3px;
-            font-size: 16px;
-            font-family: 'Segoe UI';
-            color: white;
-         
-        }
-        
-        
-        #cartbtn{
-            margin: 10px 20px;
-            padding: 5px 40px 8px;
-            width: auto;
-            
-            font-size: 15px;
-            font-family: 'Segoe UI'; 
-            color: rgb(1, 19, 32);
-            background-color:white;
-            
-            outline: none;
-            border: solid 2px rgb(40, 39, 39);
-            border-radius: 2px;
-        
-        }
+#orderslistbox{
+margin: 8px 0px;
+padding: 2px;
+height: auto;
+max-width: 100%;
+
+}
+
+#orderslistbox .orderslist{
+margin: 5px auto 50px;
+padding: 10px 5px; 
+background-color: rgba(75, 3, 5, 0.944);
+border-radius: 4px;
+}
+
+#orderslistbox .orderslist .date{
+margin: 5px;
+padding: 10px;
+font-size: 16px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+}
+
+#orderslistbox .orderslist .productinfo{
+margin:auto ;
+padding: 5px;
+max-width: 75%;
+height: auto;
+
+display: flex;
+flex-direction: column;
+border: solid 1px rgba(74, 25, 25, 0.196);
+border-radius: 3px;
+background-color: white;
+}
+
+.orderslist .productinfo div{
+
+margin:10px 0px 0px;
+padding: 4px;
+display: flex;
+flex-direction: row;
+}
+
+.orderslist .productinfo div img{
+
+margin: 0px ;
+padding: 0px;
+
+width: 120px;
+height: 120px;
+
+}
+
+.orderslist .productinfo div .itemdetail{
+margin: 0px 0px 0px 10px;
+padding: 4px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
+}
+
+.productinfo div .itemdetail p{
+margin: 9px;
+padding: 1px;
+font-size: small;
+font-family: 'Segoe UI';
+color: black;
+}
+
+#orderslistbox .orderslist h6{
+margin: 5px;
+padding: 3px;
+font-size: 16px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+}
+
+#orderslistbox .orderslist h6 span{
+margin: 0px;
+padding: 0px;
+font-size: 19px;
+font-family: 'Segoe UI';
+/* font-weight: bold; */
+color: white;
+
+}
+
+#orderslistbox .orderslist h4{
+margin: 5px;
+padding: 3px;
+font-size: 16px;
+font-family: 'Segoe UI';
+color: white;
+
+}
 
 
-    
-    }
-    
+#cartbtn{
+margin: 10px 20px;
+padding: 5px 40px 8px;
+width: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI'; 
+color: rgb(1, 19, 32);
+background-color:white;
+
+outline: none;
+border: solid 2px rgb(40, 39, 39);
+border-radius: 2px;
+
+}
+
+
+}
+
+/* Desktop styling */
+@media (min-width: 1020px) {
+
+
+
+#orderspage{
+margin: 0px;
+padding:0px  0px; 
+
+}
+
+
+#orderslistbox{
+margin: 8px 0px;
+padding: 2px;
+height: auto;
+max-width: 100%;
+
+}
+
+#orderslistbox .orderslist{
+margin: 5px auto 50px;
+padding: 10px 5px; 
+background-color: rgba(75, 3, 5, 0.944);;
+border-radius: 4px;
+}
+
+#orderslistbox .orderslist .date{
+margin: 5px;
+padding: 10px;
+font-size: 16px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+}
+
+#orderslistbox .orderslist .productinfo{
+margin:auto ;
+padding: 5px;
+max-width: 65%;
+height: auto;
+
+display: flex;
+flex-direction: column;
+border: solid 1px rgba(74, 25, 25, 0.196);
+border-radius: 2px;
+background-color: white;
+}
+
+.orderslist .productinfo div{
+
+margin:10px 0px 0px;
+padding: 4px;
+display: flex;
+flex-direction: row;
+}
+
+.orderslist .productinfo div img{
+
+margin: 0px ;
+padding: 0px;
+
+width: 130px;
+height: 130px;
+
+}
+
+.orderslist .productinfo div .itemdetail{
+margin: 0px 0px 0px 10px;
+padding: 4px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
+}
+
+.productinfo div .itemdetail p{
+margin: 9px;
+padding: 1px;
+font-size: small;
+font-family: 'Segoe UI';
+color: black;
+}
+
+#orderslistbox .orderslist h6{
+margin: 5px;
+padding: 3px;
+font-size: 16px;
+font-family: 'Segoe UI';
+font-weight: lighter;
+color: white;
+
+}
+
+#orderslistbox .orderslist h6 span{
+margin: 0px;
+padding: 0px;
+font-size: 19px;
+font-family: 'Segoe UI';
+/* font-weight: bold; */
+color: white;
+
+}
+
+#orderslistbox .orderslist h4{
+margin: 5px;
+padding: 3px;
+font-size: 16px;
+font-family: 'Segoe UI';
+color: white;
+
+}
+
+
+#cartbtn{
+margin: 10px 20px;
+padding: 5px 40px 8px;
+width: auto;
+
+font-size: 15px;
+font-family: 'Segoe UI'; 
+color: rgb(1, 19, 32);
+background-color:white;
+
+outline: none;
+border: solid 2px rgb(40, 39, 39);
+border-radius: 2px;
+
+}
+
+
+
+}

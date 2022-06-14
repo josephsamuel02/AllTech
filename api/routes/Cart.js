@@ -20,7 +20,6 @@ router.post("/", verifyToken, async (req, res) => {
 });
 
 //UPDATE CART
-
 router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
     try {
         const updatedCart = await Cart.findByIdAndUpdate(
@@ -37,7 +36,7 @@ router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {
     }
 });
 
-//DELETE CART
+//DELETE CART ITEM
 router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
     try {
         await Cart.findByIdAndDelete(req.params.id);
@@ -47,6 +46,21 @@ router.delete("/:id", verifyTokenAndAuthorization, async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+//DELETE/CLEAR USER'S CART ITEMS
+router.delete(
+    "/clearcart/:userId",
+    verifyTokenAndAuthorization,
+    async (req, res) => {
+        try {
+            await Cart.deleteMany({ userId: req.params.userId });
+            res.status(200).json("cart items has been deleted successfuly");
+        } catch (err) {
+            res.status(500).json(err);
+        }
+    }
+    // db.collection.deleteMany({_id: { $in: objects}});
+);
 
 // GET USER CART SUMTOTAL
 router.get("/cartsum/:userId", async (req, res) => {

@@ -26,7 +26,6 @@ z-index: 5;
 margin: 15px auto 0px 16px;
 padding: 1px;
 font-family:'Segoe UI';
-/* font-family: "Oswald", 'Segoe UI'; */
 font-size: 24px;
 font-weight: lighter;
 color: rgb(255, 255, 255);
@@ -122,8 +121,7 @@ z-index: 5;
 margin: 15px auto 0px 16px;
 padding: 1px;
 font-family:'Segoe UI';
-/* font-family: "Oswald", 'Segoe UI'; */
-font-size: 27px;
+font-size: 29px;
 font-weight: lighter;
 color: rgb(255, 255, 255);
 cursor: pointer;
@@ -237,7 +235,7 @@ margin: 15px auto 0px 16px;
 padding: 1px;
 font-family:'Segoe UI';
 /* font-family: "Oswald", 'Segoe UI'; */
-font-size: 28px;
+font-size: 30px;
 font-weight: lighter;
 color: rgb(255, 255, 255);
 cursor: pointer;

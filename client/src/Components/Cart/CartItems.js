@@ -1,5 +1,6 @@
 import "./Cart.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { UpdateCart, DeleteCart, CartSumTotal } from "../../store/actions/Cart";
 
@@ -26,9 +27,11 @@ const CartItems = () => {
         <div>
             {cartItems.map((i) => (
                 <div className="cartCard" key={i._id}>
-                    <div className="productimage">
-                        <img src={i.image} alt="laptop" />
-                    </div>
+                    <Link to={`/product/${i.productId}`}>
+                        <div className="productimage">
+                            <img src={i.image} alt="laptop" />
+                        </div>
+                    </Link>
                     <div className="itemdetails">
                         <h3 className="productname">{i.title}</h3>
                         <p className="productprice">
@@ -65,6 +68,7 @@ const CartItems = () => {
                                 .replace(/\d(?=(\d{3})+\.)/g, "$&,")}
                         </p>
                     </div>
+
                     <button
                         id="removeItem"
                         onClick={() => {
@@ -76,6 +80,7 @@ const CartItems = () => {
                     </button>
                 </div>
             ))}
+
             <br />
             {cartSum && (
                 <h3 id="sumtotal">

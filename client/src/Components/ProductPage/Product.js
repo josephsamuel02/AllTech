@@ -65,7 +65,21 @@ const Product = () => {
                                 <button onClick={() => inquan(-1)}>-</button>
                                 {quantity}
                                 <button onClick={() => inquan(1)}>+</button>
-                                <button onClick={addtocart}>Add to cart</button>
+                                {theProducts.inStock <= 0 ? (
+                                    <button
+                                        style={{
+                                            backgroundColor: "white",
+                                            color: "red",
+                                            border: "solid 1px red",
+                                        }}
+                                    >
+                                        Out of Stock
+                                    </button>
+                                ) : (
+                                    <button onClick={addtocart}>
+                                        Add to cart
+                                    </button>
+                                )}
                             </div>
                         )}
                     </div>
