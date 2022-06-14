@@ -81,8 +81,10 @@ const CategoryList = () => {
     ];
 
     useEffect(() => {
-        dispatch(Products({}, 1, 4, category, filterdObj));
         userId && dispatch(GetCart(userId));
+        setTimeout(() => {
+            dispatch(Products({}, 1, 10, category, filterdObj));
+        }, 500);
     }, [dispatch, category, filterdObj]);
 
     return (
@@ -104,10 +106,7 @@ const CategoryList = () => {
                               <Link to={`/product/${item._id}`}>
                                   <img src={item.image} alt="laptop" />
                                   <div className="Details">
-                                      <h2>
-                                          {item.title} dedicated for chewing and
-                                          exercising the gums
-                                      </h2>
+                                      <h2>{item.title}</h2>
                                       <p>
                                           <span>NGN</span>
                                           {item.price
@@ -180,10 +179,7 @@ const CategoryList = () => {
                               <Link to={`/product/${item._id}`}>
                                   <img src={item.image} alt="laptop" />
                                   <div className="Details">
-                                      <h2>
-                                          {item.title} dedicated for chewing and
-                                          exercising the gums
-                                      </h2>
+                                      <h2>{item.title}</h2>
                                       <p>
                                           <span>NGN</span>
                                           {item.price

@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { VerifyPayment } from "../../store/actions/Paystack";
 import { GetCart, DeleteAllCart } from "../../store/actions/Cart";
 import { SendOrder } from "../../store/actions/Order";
+import { DecrementProducts } from "../../store/actions/Procucts";
 
 const PickUpForm = () => {
     const cartItems = useSelector((state) => state.GetCart);
@@ -21,6 +22,19 @@ const PickUpForm = () => {
 
     const [delvAdd, setDelvAdd] = useState();
     const [warn, setWarn] = useState(false);
+
+    const IDs = [];
+    const Test = () => {
+        let i = 0;
+        while (i < cartItems.length) {
+            IDs.push(cartItems[i].productId);
+            i++;
+        }
+
+        setTimeout(() => {
+            dispatch(DecrementProducts(IDs));
+        }, 100);
+    };
 
     const settotal = () => {
         cartSum &&
@@ -48,7 +62,10 @@ const PickUpForm = () => {
         }, 400);
         setTimeout(() => {
             dispatch(DeleteAllCart(userId));
-        }, 700);
+        }, 600);
+        setTimeout(() => {
+            Test();
+        }, 800);
         setTimeout(() => {
             window.location.replace("/orders");
         }, 1000);

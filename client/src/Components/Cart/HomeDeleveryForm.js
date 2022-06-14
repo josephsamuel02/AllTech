@@ -18,25 +18,23 @@ const HomeDeleveryForm = () => {
     const [cartSumStr, setCartSumStr] = useState();
     const [warn, setWarn] = useState(false);
     const [state, setState] = useState();
-    const [IDs, setIDs] = useState();
 
     useEffect(() => userId && dispatch(GetCart(userId)), [dispatch]);
 
     const [delvAdd, setDelvAdd] = useState();
-
+    const IDs = [];
     const Test = () => {
-        // setIDs((prev) => [prev, ...cartItems]);
-        // for (let i = 0; i < cartItems.length; i++) {
-        //     setIDs((prev) => [prev, ...cartItems[i].productId]);
-        // }
-        // console.log(IDs);
-        // console.log(cartItems[0].productId);
-        // let i = cartItems.length;
-        // while (i <= cartItems.length) {
-        //     // console.log(cartItems[0].productId);
-        // }
+        let i = 0;
+        while (i < cartItems.length) {
+            IDs.push(cartItems[i].productId);
+            i++;
+        }
+
+        setTimeout(() => {
+            dispatch(DecrementProducts(IDs));
+        }, 100);
     };
-    useEffect(() => Test(), []);
+
     const settotal = () => {
         cartSum &&
             setTimeout(() => {
@@ -65,7 +63,7 @@ const HomeDeleveryForm = () => {
             dispatch(DeleteAllCart(userId));
         }, 600);
         setTimeout(() => {
-            dispatch(DecrementProducts(IDs));
+            Test();
         }, 800);
         setTimeout(() => {
             window.location.replace("/orders");

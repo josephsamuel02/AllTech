@@ -79,7 +79,6 @@ router.get("/:id", async (req, res) => {
 });
 
 //GET ALL PRODUCTS
-
 router.get("/", async (req, res) => {
     const qCategory = req.query.category;
     const qLimit = req.query.limit;
@@ -96,13 +95,8 @@ router.get("/", async (req, res) => {
         qSort == "lowestPrice" ? (sortBy = { price: 1 }) : null;
 
         if (qCategory && qSort) {
-            //added the title
-            //but not tested yet
             products = await Product.find({
                 category: {
-                    $in: [qCategory],
-                },
-                title: {
                     $in: [qCategory],
                 },
             })

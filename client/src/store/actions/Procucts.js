@@ -41,8 +41,7 @@ export const Products = (
 const decrementproducts = async (IDs) => {
     try {
         const response = await axios.patch(
-            `http://localhost:8000/products/instock`,
-
+            "http://localhost:8000/products/instock",
             IDs,
             {
                 headers: {
