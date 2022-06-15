@@ -8,6 +8,9 @@ a {
     .nav {
         display: none;
     }
+
+  
+
 }
 
 /* for tablet view */
@@ -86,3 +89,4 @@ a {
 /* Desktop styling */
 @media (min-width: 1020px) {
 }
+

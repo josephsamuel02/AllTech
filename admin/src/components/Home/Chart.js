@@ -104,7 +104,7 @@ const Chart = () => {
 
     return (
         <div className="chartGraph">
-            <div>
+            <div id="chartbtnbox">
                 <button
                     className="chartbtn"
                     onClick={() => setChartType("Bar")}
@@ -130,6 +130,7 @@ const Chart = () => {
                     Pie
                 </button>
             </div>
+
             {showChat && (
                 <>
                     {chartType == "Bar" && (

@@ -6,7 +6,6 @@ const {
 } = require("./verifyToken");
 
 const Cart = require("../models/Cart");
-
 //ADD TO CART
 
 router.post("/", verifyToken, async (req, res) => {
@@ -65,8 +64,6 @@ router.delete(
 // GET USER CART SUMTOTAL
 router.get("/cartsum/:userId", async (req, res) => {
     try {
-        // const cart = await Cart.find({ userId: req.params.userId });
-        // res.status(200).json(cart);
         const userId = req.params.userId;
         const cartSum = await Cart.aggregate([
             {
@@ -99,7 +96,9 @@ router.get("/cartsum/:userId", async (req, res) => {
 // GET USER CART
 router.get("/:userId", async (req, res) => {
     try {
-        const cart = await Cart.find({ userId: req.params.userId });
+        const cart = await Cart.find({ userId: req.params.userId }).sort({
+            createdAt: -1,
+        });
         res.status(200).json(cart);
     } catch (err) {
         res.status(500).json("somthing went wrong");

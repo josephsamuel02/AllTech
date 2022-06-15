@@ -42,3 +42,27 @@
         transform: rotate(360deg);
     }
 } */
+
+
+
+
+
+
+@media (max-width: 543px) {
+    #DeskNav{
+        display: none;
+    }
+
+    
+ 
+}
+/* for tablet view */
+@media (min-width: 544px) {
+    #MSideNav{
+        display: none;
+    }
+
+}
+/* Desktop styling */
+@media (min-width: 1020px) {
+}

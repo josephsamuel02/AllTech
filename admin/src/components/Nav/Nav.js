@@ -1,4 +1,5 @@
 import "./Nav.css";
+
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 import {
@@ -12,6 +13,11 @@ import {
     BsBoxArrowInLeft,
 } from "react-icons/bs";
 const Nav = () => {
+    const logUserOut = () => {
+        localStorage.removeItem("persist:root");
+        window.location.replace("/login");
+    };
+
     return (
         <div className="nav">
             <IconContext.Provider
@@ -20,12 +26,11 @@ const Nav = () => {
                     size: "20px",
                 }}
             >
-                <h1 className="logo">Amrok</h1>
+                <h1 className="logo">ALLTECH</h1>
                 <p className="admintitle">Admin Pannel</p>
-                <br />
+
                 <div className="navBox">
                     <br />
-                    <h5 className="dashboard">Dash Board</h5>
                     <Link to={"/"}>
                         <div className="navitem">
                             <p>
@@ -85,14 +90,16 @@ const Nav = () => {
                             <p>Staff</p>
                         </div>
                     </Link>
-                    <Link to={"/logout"}>
-                        <div className="navitem">
-                            <p>
-                                <BsBoxArrowInLeft />
-                            </p>
-                            <p>Log Out</p>
-                        </div>
-                    </Link>
+                    <div
+                        style={{ cursor: "pointer" }}
+                        onClick={() => logUserOut()}
+                        className="navitem"
+                    >
+                        <p>
+                            <BsBoxArrowInLeft />
+                        </p>
+                        <p>Log Out</p>
+                    </div>
                 </div>
             </IconContext.Provider>
         </div>

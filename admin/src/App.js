@@ -9,6 +9,7 @@ import {
 import { useSelector } from "react-redux";
 
 import Nav from "./components/Nav/Nav";
+import MobileSideNav from "./components/Nav/MobileSideNav";
 import HomePage from "./components/Home/HomePage";
 import User from "./components/Users/User";
 import UsersList from "./components/Users/UsersList";
@@ -28,19 +29,33 @@ const App = () => {
     return (
         <div className="App">
             <Router>
-                <Nav />
+                <span id="DeskNav">
+                    <Nav />
+                </span>
+                <span id="MSideNav">
+                    <MobileSideNav />
+                </span>
 
                 <br />
                 <br />
 
                 <Routes>
-                    {/* <Route
+                    <Route
                         path="/login"
                         element={
                             theuser ? <Navigate replace to="/" /> : <Login />
                         }
-                    /> */}
-                    <Route path="/" element={<HomePage />} />
+                    />
+                    <Route
+                        path="/"
+                        element={
+                            !theuser ? (
+                                <Navigate replace to="/login" />
+                            ) : (
+                                <HomePage />
+                            )
+                        }
+                    />
 
                     <Route path="/analytics" element={<Analytics />} />
 

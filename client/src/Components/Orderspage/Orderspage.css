@@ -19,8 +19,8 @@ max-width: 100%;
 #orderslistbox .orderslist{
 margin: 5px auto 50px;
 padding: 10px 5px; 
-background-color: rgba(75, 3, 5, 0.944);
-border-radius: 4px;
+background-color: rgba(255, 32, 40, 0.944);
+border-radius: 2px;
 }
 
 #orderslistbox .orderslist .date{
