@@ -1,0 +1,36 @@
+
+
+
+/* Mobile view */
+@media (max-width: 543px) {
+
+    .addproductdiv{
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+    }
+    .addproductdiv img{
+        margin: 0px;
+        width: 200px;
+        height: 200px;
+    }
+    div{
+        margin: 0px ;
+    }
+input{
+    margin: 0px;
+}
+.addproductdiv form p{
+    margin: 0px;
+    font-size: 10px;
+}
+.addproductdiv form{
+    margin: 0px;
+
+}
+
+    
+}/* for tablet view */
+@media (min-width: 544px) {
+    
+}

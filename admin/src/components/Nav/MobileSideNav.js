@@ -35,13 +35,6 @@ const MobileSideNav = () => {
                             size: "20px",
                         }}
                     >
-                        <h3 id="closenave" onClick={() => closeNave(!openNav)}>
-                            <MdClose
-                                color="rgba(128, 128, 128, 0.571)"
-                                size="20px"
-                            />
-                        </h3>
-
                         <h1 className="logo">ALLTECH</h1>
                         <p className="admintitle">Admin Pannel</p>
 

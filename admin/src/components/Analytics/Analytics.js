@@ -7,7 +7,7 @@ const Analytics = () => {
     return (
         <div className="analytics">
             <IncomeChart />
-            <br />
+
             <UsersChart />
         </div>
     );

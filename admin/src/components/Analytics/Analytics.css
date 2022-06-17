@@ -1,3 +1,45 @@
+/* Mobile */
+@media (max-width: 543px) {
+
+    .analytics {
+        margin: 0px;
+        padding: 5px;
+        width: auto;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right:0px;
+        z-index: 0;
+        
+    }
+    h1{
+        margin: 10px auto;
+        font-size: 19px;
+    }
+    
+    .incomechart {
+        margin: 0px;
+        padding: 1px;
+        position: relative;
+        height: 50%;
+        max-width: 100%;
+        max-height: 240px;
+    }
+    
+    .userschart {
+        margin: 40px 0px 0px;
+        padding: 1px;
+        position: relative;
+        height: 50%;
+        max-width: 100%;
+        max-height: 240px;
+    }
+    
+}
+   
+   /* for tablet view */
+ @media (min-width: 544px) {
 .analytics {
     margin: 0px;
     padding: 5px;
@@ -11,17 +53,28 @@
 
     overflow: scroll;
 }
+h1{
+    margin: 10px auto;
+    font-size: 23px;
+}
 
 .incomechart {
-    margin: 10px;
+    margin: 0px;
     padding: 1px;
+    position: relative;
+    height: 50%;
     max-width: 100%;
-    max-height: 200px;
+    max-height: 240px;
 }
 
 .userschart {
-    margin: 10px;
+    margin: 60px 0px 0px;
     padding: 1px;
+    position: relative;
+    height: 50%;
     max-width: 100%;
-    max-height: 200px;
+    max-height: 240px;
 }
+
+   }
+

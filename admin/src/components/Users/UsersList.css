@@ -1,98 +1,205 @@
-.userslist {
-    margin: 0px;
-    padding: 5px;
-    width: auto;
-    height: auto;
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 27%;
-    right: 0px;
+
+/* mobile */
+@media (max-width: 543px) {
+    .userslist {
+        margin: 0px;
+        padding: 5px;
+        width: auto;
+        height: 100%;
+        
+    }
+    .userslist h2{
+        margin: 10px 20px;
+        color: red;
+    }
+    
+    .userslist .listusersbox {
+        margin: 20px;
+    
+        padding: 5px;
+        max-width: 100%;
+        height: 100%;
+    
+        overflow: scroll;
+        display: flex;
+        flex-wrap: wrap;
+    
+        border-radius: 2px;
+        box-shadow: 1px 1px 1px 1px rgba(202, 199, 199, 0.384),
+            -1px -1px 2px 1px rgba(220, 218, 218, 0.26);
+    }
+    .listusersbox .listuserscard {
+        margin: 10px auto;
+    
+        padding: 5px;
+        /* width: 300px;
+        height: 165px; */
+        width: 280px;
+        height: 165px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 1px 1px 1px 1px rgba(160, 155, 155, 0.384),
+            -1px -1px 2px 1px rgba(192, 192, 192, 0.26);
+    }
+    .listuserscard:hover {
+        box-shadow: 1px 1px 4px 1px rgba(155, 156, 160, 0.753),
+            0px 0px 1px 0px rgba(212, 211, 211, 0.281);
+    }
+    .listuserscard img {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 50%;
+        object-position: center;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+    
+    .listuserscard .detail {
+        margin: 0px 0px 0px 6px;
+        padding: 3px;
+        max-height: 100%;
+        width: 50%;
+        border: solid 1px rgba(130, 129, 129, 0.39);
+        
+        border-radius: 3px;
+    }
+    .listuserscard h4 {
+        margin: 4px;
+        padding: 1px 2px;
+    
+        max-width: 100%;
+        font-size: 12px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        color:black;
+    }
+    
+    .listuserscard p {
+        margin: 2px 0px;
+        padding: 6px;
+    
+        max-width: 100%;
+        overflow: hidden;
+        word-break: break-all;
+        max-width: 100%;
+        height: 9px;
+    
+        font-size: 13px;
+    
+        color: rgb(14, 3, 3);
+    }
+    
+    .listuserscard p span {
+        margin: 0px;
+        padding: 1px 3px;
+    
+        font: 14px;
+        color: rgba(62, 10, 122, 0.972);
+    }
 }
-
-.userslist .listusersbox {
-    margin: 10px;
-
-    padding: 5px;
-    max-width: 100%;
-    height: 100%;
-
-    overflow: scroll;
-    display: flex;
-    flex-wrap: wrap;
-
-    border-radius: 30px;
-    box-shadow: 1px 1px 1px 1px rgba(160, 155, 155, 0.384),
-        -1px -1px 2px 1px rgba(192, 192, 192, 0.26);
-}
-.listusersbox .listuserscard {
-    margin: 10px 10px;
-
-    padding: 5px;
-    /* width: 300px;
-    height: 165px; */
-    width: 270px;
-    height: 165px;
-    border-radius: 18px;
-    display: flex;
-    flex-direction: row;
-    box-shadow: 1px 1px 1px 1px rgba(160, 155, 155, 0.384),
-        -1px -1px 2px 1px rgba(192, 192, 192, 0.26);
-}
-.listuserscard:hover {
-    box-shadow: 1px 1px 4px 1px rgba(155, 156, 160, 0.753),
-        0px 0px 1px 0px rgba(212, 211, 211, 0.281);
-}
-.listuserscard img {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-    width: 50%;
-    object-position: center;
-    object-fit: cover;
-    border-radius: 15px 5px 5px 15px;
-}
-
-.listuserscard .detail {
-    margin: 0px 0px 0px 6px;
-    padding: 3px;
-    max-height: 100%;
-    width: 50%;
-    border: solid 2px rgba(179, 177, 177, 0.39);
-
-    /* box-shadow: 1px 1px 1px 1px rgba(160, 155, 155, 0.384),
-        -1px -1px 2px 1px rgba(192, 192, 192, 0.26);*/
-    border-radius: 10px;
-}
-.listuserscard h4 {
-    margin: 4px;
-    padding: 1px 2px;
-
-    max-width: 100%;
-    font-size: 12px;
-    font-weight: bold;
-    color: rgb(5, 5, 14);
-}
-
-.listuserscard p {
-    margin: 2px 0px;
-    padding: 6px;
-
-    max-width: 100%;
-    overflow: hidden;
-    word-break: break-all;
-    max-width: 100%;
-    height: 9px;
-
-    font-size: 13px;
-
-    color: rgb(14, 3, 3);
-}
-
-.listuserscard p span {
-    margin: 0px;
-    padding: 1px 3px;
-
-    font: 14px;
-    color: rgba(62, 10, 122, 0.972);
+/* tablet */
+@media (min-width: 544px) {
+    .userslist {
+        margin: 0px;
+        padding: 5px;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 27%;
+        right: 0px;
+    }
+    .userslist h2{
+        margin: 10px 20px;
+        color: red;
+    }
+    
+    .userslist .listusersbox {
+        margin: 20px;
+    
+        padding: 5px;
+        max-width: 100%;
+        height: 100%;
+    
+        overflow: scroll;
+        display: flex;
+        flex-wrap: wrap;
+    
+        border-radius: 2px;
+        box-shadow: 1px 1px 1px 1px rgba(202, 199, 199, 0.384),
+            -1px -1px 2px 1px rgba(220, 218, 218, 0.26);
+    }
+    .listusersbox .listuserscard {
+        margin: 10px auto;
+    
+        padding: 5px;
+        /* width: 300px;
+        height: 165px; */
+        width: 280px;
+        height: 165px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 1px 1px 1px 1px rgba(160, 155, 155, 0.384),
+            -1px -1px 2px 1px rgba(192, 192, 192, 0.26);
+    }
+    .listuserscard:hover {
+        box-shadow: 1px 1px 4px 1px rgba(155, 156, 160, 0.753),
+            0px 0px 1px 0px rgba(212, 211, 211, 0.281);
+    }
+    .listuserscard img {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 50%;
+        object-position: center;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+    
+    .listuserscard .detail {
+        margin: 0px 0px 0px 6px;
+        padding: 3px;
+        max-height: 100%;
+        width: 50%;
+        border: solid 1px rgba(130, 129, 129, 0.39);
+        
+        border-radius: 3px;
+    }
+    .listuserscard h4 {
+        margin: 4px;
+        padding: 1px 2px;
+    
+        max-width: 100%;
+        font-size: 12px;
+        font-family: sans-serif;
+        font-weight: lighter;
+        color:black;
+    }
+    
+    .listuserscard p {
+        margin: 2px 0px;
+        padding: 6px;
+    
+        max-width: 100%;
+        overflow: hidden;
+        word-break: break-all;
+        max-width: 100%;
+        height: 9px;
+    
+        font-size: 13px;
+    
+        color: rgb(14, 3, 3);
+    }
+    
+    .listuserscard p span {
+        margin: 0px;
+        padding: 1px 3px;
+    
+        font: 14px;
+        color: rgba(62, 10, 122, 0.972);
+    }
 }

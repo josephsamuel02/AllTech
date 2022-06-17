@@ -2,7 +2,7 @@ import "./Products.css";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 import { BsArrowDownUp } from "react-icons/bs";
-import { useState, useEff } from "react";
+import { useState, useEffect } from "react";
 import AddProduct from "./AddProduct";
 
 const Products = () => {
@@ -39,7 +39,7 @@ const Products = () => {
 
                 {hide == "products" && (
                     <>
-                        <h2>Products Categories</h2>
+                        <h2 id="catheader">Products Categories</h2>
                         <div className="ctegorylist">
                             <span>Find by: </span>
 
@@ -49,94 +49,20 @@ const Products = () => {
                                 defaultValue={"categories"}
                             >
                                 <option disabled>Categories</option>
-                                <option value="food stuffs">
-                                    Food Ftuffs{" "}
-                                </option>
-                                <option value="vegitsblesandspices">
-                                    Vegitsbles and Spices
-                                </option>
-                                <option value="grosery">Groceries</option>
-                                <option value="computers">Computers</option>
-                                <option value="accessories">Accessories</option>
-                                <option value="fashion">
-                                    Fashion & Clothing
-                                </option>
-                                <option value="pets">Pets</option>
+                                <option value="computer">Computers</option>
+                                <option value="laptop">Laptops</option>
+                                <option value="accesory">Accessories</option>
+                                <option value="phone">Mobile Phones</option>
+                                <option value="accessories">Electronics</option>
+                                <option value="battery">Batteries</option>
+                                <option value="cctv">CCTV</option>
                             </select>
                         </div>
                         <div className="categorybox">
-                            <Link to={"/productslist?category=food stuffs"}>
+                            <Link to={"/productslist?category=computer"}>
                                 <div className="categorycard">
                                     <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Food Stuffs</h4>
-                                </div>
-                            </Link>
-
-                            <Link to={"/productslist?category=grosery"}>
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Groseries</h4>
-                                </div>
-                            </Link>
-                            <Link
-                                to={"/productslist?category=sport and fitness"}
-                            >
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4> Sports & Fitness</h4>
-                                </div>
-                            </Link>
-                            <Link
-                                to={
-                                    "/productslist?category=mobile and accessories"
-                                }
-                            >
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Mobile & Accesories</h4>
-                                </div>
-                            </Link>
-                            <Link to={"/productslist?category=gift items"}>
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Gift Items</h4>
-                                </div>
-                            </Link>
-                            <Link to={"/productslist?category=electronics"}>
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Electronics</h4>
-                                </div>
-                            </Link>
-
-                            <Link to={"/productslist?category=computers"}>
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
+                                        src="https://picsum.photos/210"
                                         alt=""
                                     />
 
@@ -144,114 +70,53 @@ const Products = () => {
                                 </div>
                             </Link>
 
-                            <Link to={"/productslist?category=cusmetics"}>
+                            <Link to={"/productslist?category=laptop"}>
                                 <div className="categorycard">
                                     <img
                                         src="https://picsum.photos/250"
                                         alt=""
                                     />
 
-                                    <h4>Beauty & Cusmetics</h4>
+                                    <h4>Laptops</h4>
                                 </div>
                             </Link>
-                            <Link to={"/productslist?category=health"}>
+                            <Link to={"/productslist?category=phone"}>
                                 <div className="categorycard">
                                     <img
-                                        src="https://picsum.photos/250"
+                                        src="https://picsum.photos/240"
                                         alt=""
                                     />
 
-                                    <h4>Health</h4>
+                                    <h4> Mobile Phones</h4>
                                 </div>
                             </Link>
-                            <Link to={"/productslist?category=fashion"}>
+                            <Link to={"/productslist?category=electronic"}>
                                 <div className="categorycard">
                                     <img
-                                        src="https://picsum.photos/250"
+                                        src="https://picsum.photos/150"
                                         alt=""
                                     />
 
-                                    <h4>Fashion & Clothing</h4>
+                                    <h4>Electronics</h4>
                                 </div>
                             </Link>
-                            <Link to={"/productslist?category=pets"}>
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
 
-                                    <h4>Pets</h4>
-                                </div>
-                            </Link>
-                            <Link to={"/productslist?category=music"}>
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Music</h4>
-                                </div>
-                            </Link>
-                            <Link to={"/productslist?category=kitchen"}>
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Kitchen</h4>
-                                </div>
-                            </Link>
-                            <Link
-                                to={"/productslist?category=baby kits and toys"}
-                            >
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Baby Kits & Toys</h4>
-                                </div>
-                            </Link>
-                            <Link to={"/productslist?category=books and media"}>
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Books & Media Library</h4>
-                                </div>
-                            </Link>
-                            <Link to={"/productslist?category=drinks"}>
-                                <div className="categorycard">
-                                    <img
-                                        src="https://picsum.photos/250"
-                                        alt=""
-                                    />
-
-                                    <h4>Drinks & Beverage</h4>
-                                </div>
-                            </Link>
                             <Link to={"/productslist?category=gaming"}>
                                 <div className="categorycard">
                                     <img
-                                        src="https://picsum.photos/250"
+                                        src="https://picsum.photos/234"
                                         alt=""
                                     />
 
-                                    <h4>Gaming</h4>
+                                    <h4>Gaming Consoles</h4>
                                 </div>
                             </Link>
-                        </div>{" "}
+                        </div>
                     </>
                 )}
 
                 {hide == "addProducts" && <AddProduct />}
-            </IconContext.Provider>{" "}
+            </IconContext.Provider>
         </div>
     );
 };

@@ -9,6 +9,7 @@ const productShema = new mongoose.Schema(
         size: { type: String },
         color: { type: String },
         price: { type: Number, required: true },
+        ukUsed: { type: Boolean, required: true },
         inStock: { type: Number, default: 1 },
         comments: { type: Array },
     },

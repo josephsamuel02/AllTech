@@ -43,7 +43,7 @@ margin: 0px;
 padding: 0px;
 position: fixed;
 
-top: 54%;
+top: 55%;
 bottom: 2px;
 left: 0%;
 right: 0%;
@@ -63,8 +63,8 @@ display: block;
 overflow: scroll;
 
 border-radius:6px;
-box-shadow: 1px 1px 2px 1px rgba(192, 192, 192, 0.493),
--1px -1px 2px 1px rgba(192, 192, 192, 0.493);
+box-shadow: 1px 1px 2px 1px rgba(192, 192, 192, 0.187),
+-1px -1px 2px 1px rgba(192, 192, 192, 0.187);
 }
 
 .newOrders h5 {
@@ -101,7 +101,7 @@ padding: 1px;
 font-size: 13px;
 font-family: 'Segoe UI';
 font-weight: lighter;
-color: rgb(57, 56, 56);
+color: black;
 }
 
 
@@ -119,8 +119,8 @@ color: rgb(57, 56, 56);
     overflow: scroll;
     
     border-radius:6px;
-    box-shadow: 1px 1px 2px 1px rgba(192, 192, 192, 0.493),
-    -1px -1px 2px 1px rgba(192, 192, 192, 0.493);
+    box-shadow: 1px 1px 2px 1px rgba(192, 192, 192, 0.187),
+    -1px -1px 2px 1px rgba(192, 192, 192, 0.187);
     }
     
     .procesingOrders h5 {
@@ -157,7 +157,7 @@ color: rgb(57, 56, 56);
     font-size: 13px;
     font-family: 'Segoe UI';
     font-weight: lighter;
-    color: rgb(57, 56, 56);
+    color: black;
     }
 
 

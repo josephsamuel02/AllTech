@@ -46,9 +46,9 @@ const ProductsList = () => {
 
     return (
         <div className="productslist">
-            <h2>Products </h2>
+            <h2 id="mainheader">Products </h2>
 
-            <h3>{category}</h3>
+            <h3 id="catname">{category}</h3>
 
             <div className="filterBox">
                 <h4>Sort Products:</h4>
@@ -74,7 +74,7 @@ const ProductsList = () => {
                             <div className="listcategorycard">
                                 <img src={i.image} alt="" />
                                 <div className="detail">
-                                    <h4>{i.title} </h4>
+                                    <h4>{i.title}</h4>
                                     <p>
                                         Staus:
                                         {i.inStock == true ? (
@@ -89,154 +89,10 @@ const ProductsList = () => {
                             </div>
                         </Link>
                     ))}
-                <button onClick={() => getmore()}>Load more</button>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                {/* <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus:
-                                <span style={{ color: "red" }}>
-                                    out of stuck
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link>
-                <Link to={"/product"}>
-                    <div className="listcategorycard">
-                        <img src="https://picsum.photos/250" alt="" />
-                        <div className="detail">
-                            <h4>Product name </h4>
-                            <p>
-                                Staus: <span>instock</span>
-                            </p>
-                        </div>
-                    </div>
-                </Link> */}
             </div>
+            <button id="getmore" onClick={() => getmore()}>
+                Load more
+            </button>
         </div>
     );
 };

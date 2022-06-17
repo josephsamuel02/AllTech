@@ -12,7 +12,7 @@
        margin: 30px auto 5px;
        padding: 30px 15px;
    
-       width: 85%;
+       width: 75%;
        height: 70vh;
    
        display: flex;
@@ -126,21 +126,29 @@
     
    
        #login{
-           margin: 0px;
+           margin: 0px ;
            padding: 5px; 
+           position: absolute;
+           left: 29%;
+           right: 0px;
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           
        }
       
        #login form{
-          margin: 30px auto 5px;
-          padding: 30px 15px;
+          margin: 30px auto ;
+          padding: 15px;
       
           width: 350px;
           height: 70vh;
-      
+          position: relative;
           display: flex;
           flex-direction: column;
           background-color: white;
-      
+       
+  
           border-radius: 5px;
           box-shadow:  1px 1px 4px 2px rgba(173, 168, 168, 0.222);
       }
@@ -238,130 +246,6 @@
           cursor: pointer;
           color: blue;
       }
-   
-   }
-   
-   
-   /* Desktop styling */
-   @media (min-width: 1020px) {
-   
-    
-       #login{
-           margin: 0px;
-           padding: 5px; 
-       }
-      
-       #login form{
-          margin: 30px auto 5px;
-          padding: 30px 15px;
-      
-          width: 350px;
-          height: 70vh;
-      
-          display: flex;
-          flex-direction: column;
-          background-color: white;
-      
-          border-radius: 5px;
-          box-shadow:  1px 1px 4px 2px rgba(173, 168, 168, 0.222);
-      }
-      
-      #formlabel{
-       margin: 0px 10px 20px ;
-       padding: 2px;
-   
-       font-size: 20px;
-       font-weight: lighter;
-       font-family: 'segoe UI';
-   }
-      
-      #login form input{
-          margin: 20px auto;
-          padding: 10px;
-      
-          width: 85%;
-          height: 30px;
-      
-          font-size: 14px;
-          font-family: 'segoe UI';
-          font-weight: lighter;
-          color: rgb(38, 35, 35);
-      
-          outline:none;
-         
-          border: solid 1px rgb(221, 223, 229);
-          border-radius:5px;
-      }
-      
-      
-      #login form #loginbtn{
-          margin: 10px auto;
-          padding: 0px 20px;
-      
-          width: 90%;
-          height: 40px;
-      
-          font-size: 16px;
-          font-family: 'segoe UI';
-          font-weight: lighter;
-          color: white;
-          text-align: center;
-          outline:none;
-         
-          border: solid 1px rgb(221, 223, 229);
-          border-radius:4px;
-          background-color: red;
-          
-      }
-   
-      
-      #login form #loginbtn:hover{
-       
-       background-color: rgb(202, 8, 8);
-       
-   }
-   
-      
-      #warn{
-          margin: 10px  auto;
-          padding: 0px ;
-       
-          font-size: 12px;
-          font-family: 'segoe UI';
-          /* font-weight: lighter; */
-          color: red;
-          text-align: center;
-            
-      }
-      #refarebox{
-          margin: 35px auto 5px;
-          padding: 10px;
-          display: flex;
-          flex-direction: column;
-      }
-      #refarebox p{
-          margin: auto ;
-          padding: 2px;
-         
-          font-size: 14px;
-          font-family: 'segoe UI';
-          font-weight: lighter;
-      
-          color: black;
-      }
-      
-      
-      #refarebox p span{
-          margin: auto ;
-          padding: 2px;
-         
-          font-size: 14px;
-          font-family: 'segoe UI';
-          font-weight: lighter;
-          cursor: pointer;
-          color: blue;
-      }
-   
    
    }
    

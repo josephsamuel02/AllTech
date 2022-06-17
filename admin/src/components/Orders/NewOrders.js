@@ -19,7 +19,7 @@ const NewOrders = () => {
                 {Orders &&
                     Orders.map((item) => (
                         <span key={item._id}>
-                            {item.status == "Pending" && (
+                            {item.status == "pending" && (
                                 <div className="ordercard">
                                     <div className="detail">
                                         <h5 className="username">
@@ -28,7 +28,7 @@ const NewOrders = () => {
 
                                         <ul>
                                             <li>
-                                                <b>Name : </b>{" "}
+                                                <b>Name : </b>
                                                 {item.receiversInfo.name}
                                             </li>
                                             <li>
@@ -40,7 +40,7 @@ const NewOrders = () => {
                                                 {item.receiversInfo.phone}
                                             </li>
                                             <li>
-                                                <b>Adress : </b>{" "}
+                                                <b>Adress : </b>
                                                 {
                                                     item.receiversInfo
                                                         .deleveryAddress
@@ -71,79 +71,6 @@ const NewOrders = () => {
                 <br /> <br /> <br />
                 <br />
                 <br />
-                {/* <div className="ordercard">
-                    <div className="detail">
-                        <h5 className="username">Akin Alabi</h5>
-                        <ul>
-                            <li> Full Computer System</li>
-                            <li> iPod</li>
-                            <li> Full Computer System</li>
-                            <li> iPod</li>
-                            <li> Gass Cooker</li>
-                            <li> Gass Cooker</li>
-                            <li> Nigerian Football Jersy</li>
-                        </ul>
-                        <span>...</span>
-                        <div className="stats">
-                            <p>Date</p> <p>ID</p> <p>Status</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="ordercard">
-                    <div className="detail">
-                        <h5 className="username">Akin Alabi</h5>
-                        <ul>
-                            <li> Full Computer System</li>
-                            <li> iPod</li>
-                            <li> Full Computer System</li>
-                            <li> iPod</li>
-                            <li> Gass Cooker</li>
-                            <li> Gass Cooker</li>
-                            <li> Nigerian Football Jersy</li>
-                        </ul>
-                        <span>...</span>
-                        <div className="stats">
-                            <p>Date</p> <p>ID</p> <p>Status</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="ordercard">
-                    <div className="detail">
-                        <h5 className="username">Akin Alabi</h5>
-                        <ul>
-                            <li> Full Computer System</li>
-                            <li> iPod</li>
-                            <li> Full Computer System</li>
-                            <li> iPod</li>
-                            <li> Gass Cooker</li>
-                            <li> Gass Cooker</li>
-                            <li> Nigerian Football Jersy</li>
-                        </ul>
-                        <span>...</span>
-                        <div className="stats">
-                            <p>Date</p> <p>ID</p> <p>Status</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="ordercard">
-                    <div className="detail">
-                        <h5 className="username">Akin Alabi</h5>
-                        <ul>
-                            <li> Full Computer System</li>
-                            <li> iPod</li>
-                            <li> Full Computer System</li>
-                            <li> iPod</li>
-                            <li> Gass Cooker</li>
-                            <li> Gass Cooker</li>
-                            <li> Nigerian Football Jersy</li>
-                        </ul>
-                        <span>...</span>
-                        <div className="stats">
-                            <p>Date</p> <p>ID</p> <p>Status</p>
-                        </div>
-                    </div>
-                </div>
- */}
             </div>
         </div>
     );
