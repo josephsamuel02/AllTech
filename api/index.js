@@ -26,7 +26,7 @@ app.use("/order", OrderRouter);
 app.use("/search", SearchRouter);
 
 app.get("/", (req, res) => {
-    res.send("hellow Coder!");
+    res.send("hello Coder!");
 });
 
 app.listen(process.env.PORT || 7000, () => console.log("server connected"));
