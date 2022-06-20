@@ -1,6 +1,8 @@
 // const axios = require("axios");
 import axios from "axios";
 
+const apiBaseUrl = process.env.REACT_APP_API_URL;
+
 const products = async (prevstate, page = 1, limit, category, filterdObj) => {
     try {
         const response = await axios.get(
