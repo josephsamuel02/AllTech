@@ -1,10 +1,12 @@
 // const axios = require("axios");
 import axios from "axios";
 
+const apiBaseUrl = process.env.REACT_APP_API_URL;
+
 const products = async (prevstate, page = 1, limit, category, filterdObj) => {
     try {
         const response = await axios.get(
-            `http://localhost:8000/products?page=${page}&limit=${limit}&category=${category}&sort=${filterdObj}`
+            `${apiBaseUrl}/products?page=${page}&limit=${limit}&category=${category}&sort=${filterdObj}`
         );
         return {
             products: prevstate.products
@@ -41,7 +43,7 @@ export const Products = (
 const decrementproducts = async (IDs) => {
     try {
         const response = await axios.patch(
-            "http://localhost:8000/products/instock",
+            `${apiBaseUrl}/products/instock`,
             IDs,
             {
                 headers: {

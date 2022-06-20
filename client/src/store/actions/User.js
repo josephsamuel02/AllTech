@@ -6,14 +6,13 @@ import axios from "axios";
 //         .accesstoken
 // }`;
 
+const apiBaseUrl = process.env.REACT_APP_API_URL;
+
 export const userId = "Guest";
 
 const login = async (userin) => {
     try {
-        const response = await axios.post(
-            "http://localhost:8000/auth/login",
-            userin
-        );
+        const response = await axios.post(`${apiBaseUrl}/auth/login`, userin);
         return response.data;
     } catch (err) {
         throw err;
@@ -27,10 +26,7 @@ export const LogIn = (userin) => ({
 
 const register = async (user) => {
     try {
-        const response = await axios.post(
-            "http://localhost:8000/auth/register",
-            user
-        );
+        const response = await axios.post(`${apiBaseUrl}/auth/register`, user);
         return response.data;
     } catch (err) {
         throw err;

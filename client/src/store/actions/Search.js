@@ -1,9 +1,9 @@
 import axios from "axios";
-
+const apiBaseUrl = process.env.REACT_APP_API_URL;
 const search = async (searchtext) => {
     try {
         const response = await axios.get(
-            `http://localhost:8000/search?searchtext=${searchtext}`
+            `${apiBaseUrl}/search?searchtext=${searchtext}`
         );
         return response.data;
     } catch (err) {

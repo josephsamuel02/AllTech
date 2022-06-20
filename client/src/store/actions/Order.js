@@ -1,21 +1,18 @@
 import axios from "axios";
 
+const apiBaseUrl = process.env.REACT_APP_API_URL;
+
 const sendOrder = async (order) => {
     try {
-        const response = await axios.post(
-            "http://localhost:8000/order",
-            order,
-            {
-                headers: {
-                    token: `Bearer ${
-                        JSON.parse(
-                            JSON.parse(localStorage.getItem("persist:root"))
-                                .LogIn
-                        ).accesstoken
-                    }`,
-                },
-            }
-        );
+        const response = await axios.post(`${apiBaseUrl}/order`, order, {
+            headers: {
+                token: `Bearer ${
+                    JSON.parse(
+                        JSON.parse(localStorage.getItem("persist:root")).LogIn
+                    ).accesstoken
+                }`,
+            },
+        });
 
         return response.data;
     } catch (err) {
@@ -32,7 +29,7 @@ export const SendOrder = (order) => ({
 const getOrders = async (userId) => {
     try {
         const response = await axios.get(
-            `http://localhost:8000/order/${userId}`,
+            `${apiBaseUrl}/order/${userId}`,
 
             {
                 headers: {
