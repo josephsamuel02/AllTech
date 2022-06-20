@@ -1,14 +1,12 @@
 import axios from "axios";
-// import { token } from "./User";
 
-// var tkn = token;
-// tkn != null > 3 ? (tkn = token) : (tkn = "Guest");
+const apiBaseUrl = process.env.REACT_APP_API_URL;
 
 // ADD PRODUCTS TO CART
 const addtocart = async (product) => {
     try {
         const response = await axios.post(
-            "http://localhost:8000/cart",
+            `${apiBaseUrl}/cart`,
             product,
 
             {
@@ -40,9 +38,7 @@ export const AddToCart = (product) => ({
 
 const cartitems = async (userId) => {
     try {
-        const response = await axios.get(
-            `http://localhost:8000/cart/${userId}`
-        );
+        const response = await axios.get(`${apiBaseUrl}/cart/${userId}`);
         return response.data;
     } catch (err) {
         throw err;
@@ -59,7 +55,7 @@ export const GetCart = (userId) => ({
 const updatecart = async (q, productId) => {
     try {
         const response = await axios.put(
-            `http://localhost:8000/cart/${productId}`,
+            `${apiBaseUrl}/cart/${productId}`,
             {
                 quantity: q,
             },
@@ -91,7 +87,7 @@ export const UpdateCart = (q, productId) => ({
 const cartsumTotal = async (userId) => {
     try {
         const response = await axios.get(
-            `http://localhost:8000/cart/cartsum/${userId}`
+            `${apiBaseUrl}/cart/cartsum/${userId}`
         );
 
         return response.data;
@@ -109,19 +105,15 @@ export const CartSumTotal = (userId) => ({
 
 const deletecart = async (id) => {
     try {
-        const response = await axios.delete(
-            `http://localhost:8000/cart/${id}`,
-            {
-                headers: {
-                    token: `Bearer ${
-                        JSON.parse(
-                            JSON.parse(localStorage.getItem("persist:root"))
-                                .LogIn
-                        ).accesstoken
-                    }`,
-                },
-            }
-        );
+        const response = await axios.delete(`${apiBaseUrl}/cart/${id}`, {
+            headers: {
+                token: `Bearer ${
+                    JSON.parse(
+                        JSON.parse(localStorage.getItem("persist:root")).LogIn
+                    ).accesstoken
+                }`,
+            },
+        });
 
         return { status: "Item has been delete successfuly" };
     } catch (err) {

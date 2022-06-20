@@ -1,10 +1,8 @@
 import axios from "axios";
-
+const apiBaseUrl = process.env.REACT_APP_API_URL;
 const oneProduct = async (id) => {
     try {
-        const response = await axios.get(
-            `http://localhost:8000/products/${id}`
-        );
+        const response = await axios.get(`${apiBaseUrl}/products/${id}`);
 
         return response.data;
     } catch (err) {

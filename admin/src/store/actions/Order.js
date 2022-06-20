@@ -1,10 +1,10 @@
 import axios from "axios";
-
+const apiBaseUrl = process.env.REACT_APP_API_URL;
 //get user orders
 const getOrders = async (userId) => {
     try {
         const response = await axios.get(
-            `http://localhost:8000/order/${userId}`,
+            `${apiBaseUrl}/order/${userId}`,
 
             {
                 headers: {

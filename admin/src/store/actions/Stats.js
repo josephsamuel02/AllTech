@@ -1,9 +1,9 @@
 import axios from "axios";
-
+const apiBaseUrl = process.env.REACT_APP_API_URL;
 const incomestats = async () => {
     try {
         const response = await axios.get(
-            "http://localhost:8000/order/income",
+            `${apiBaseUrl}/order/income`,
 
             {
                 headers: {

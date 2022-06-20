@@ -4,7 +4,7 @@ import axios from "axios";
 const products = async (prevstate, page = 1, limit, category, filterdObj) => {
     try {
         const response = await axios.get(
-            `http://localhost:8000/products?page=${page}&limit=${limit}&category=${category}&sort=${filterdObj}`
+            `${apiBaseUrl}/products?page=${page}&limit=${limit}&category=${category}&sort=${filterdObj}`
         );
         return {
             products: prevstate.products
@@ -40,20 +40,15 @@ export const Products = (
 
 const createProduct = async (product) => {
     try {
-        const response = await axios.post(
-            "http://localhost:8000/products",
-            product,
-            {
-                headers: {
-                    token: `Bearer ${
-                        JSON.parse(
-                            JSON.parse(localStorage.getItem("persist:root"))
-                                .LogIn
-                        ).accesstoken
-                    }`,
-                },
-            }
-        );
+        const response = await axios.post(`${apiBaseUrl}/products`, product, {
+            headers: {
+                token: `Bearer ${
+                    JSON.parse(
+                        JSON.parse(localStorage.getItem("persist:root")).LogIn
+                    ).accesstoken
+                }`,
+            },
+        });
         return response.data;
     } catch (err) {
         throw err;
